@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer__links {
+  @apply flex-1 flex justify-end max-sm:mt-4 gap-10;
+}
