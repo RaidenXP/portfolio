@@ -2,9 +2,9 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div className='max-w-screen-xl mx-auto p-4'>
+    <article className='w-full min-w-0 max-w-6xl mt-4 px-1 md:px-6'>
       Projects
-    </div>
+    </article>
   )
 }
 

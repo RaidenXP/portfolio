@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .footer__links {
-  @apply flex-1 flex justify-end max-sm:mt-4 gap-10;
+  @apply flex-1 flex justify-end gap-10;
 }

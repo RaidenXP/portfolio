@@ -3,8 +3,11 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="max-w-screen-xl flex justify-between items-center flex-wrap mt-10 border-t border-current mx-auto p-4">
+    <footer className='w-full mx-auto border-t border-solid border-violet-200'>
+      <div 
+        className="max-w-full mx-auto flex justify-between items-center flex-wrap 
+        py-[36px] md:py-[40px] md:px-[60px] px-4 min-h-[100px]"
+      >
         <p className='black text-xl font-bold'>Nathan Tran's Other Links</p>
         <div className='footer__links'>
             <Link href='https://www.linkedin.com/in/nathan-tran-a6455b164/'>

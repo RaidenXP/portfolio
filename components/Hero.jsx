@@ -54,7 +54,7 @@ const Hero = () => {
           className="grid md:grid-cols-2 gap-8 py-8 px-4 mx-auto max-w-screen-xl lg:py-16"
         >
           <div 
-            className="bg-violet-50 border border-violet-200 rounded-lg p-8 md:p-12 shadow-xl"
+            className="bg-violet-50 border border-violet-200 rounded-lg p-8 md:p-12 shadow-lg"
           >
             <div 
               className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 
@@ -80,13 +80,14 @@ const Hero = () => {
             <h2 
               className="text-gray-900 text-3xl font-extrabold mb-2"
             >
-              Start with Flowbite Design System
+              A list of Projects
             </h2>
             <p 
               className="text-lg font-normal text-gray-500 mb-4"
             >
-              Static websites are now used to bootstrap lots of websites and are becoming the 
-              basis for a variety of tools that even influence both web designers and developers.
+              I've worked on many solo and group projects. Each provided a lot of learning opportunities.
+              On this page I will go over my favorite and interesting projects that I have been a part
+              of.
             </p>
             <Link 
               href="/Projects" 
@@ -111,34 +112,28 @@ const Hero = () => {
           </div>
 
 
-          <div className="bg-violet-50 border border-violet-200 rounded-lg p-8 md:p-12 shadow-xl">
-            <div className="bg-purple-100 text-purple-800 text-xs 
+          <div className="bg-violet-50 border border-violet-200 rounded-lg p-8 md:p-12 shadow-lg">
+            <div className="bg-indigo-100 text-indigo-800 text-xs 
               font-medium inline-flex items-center px-2.5 py-0.5 rounded-md mb-2"
             >
-                <svg 
-                  className="w-2.5 h-2.5 mr-1.5" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  fill="currentColor" 
-                  viewBox="0 0 18 18"
-                >
-                  <path 
-                    d="M17 11h-2.722L8 17.278a5.512 5.512 0 0 1-.9.722H17a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1ZM6 
-                    0H1a1 1 0 0 0-1 1v13.5a3.5 3.5 0 1 0 7 0V1a1 1 0 0 0-1-1ZM3.5 15.5a1 1 0 1 1 0-2 1 1 0 
-                    0 1 0 2ZM16.132 4.9 12.6 1.368a1 1 0 0 0-1.414 0L9 3.55v9.9l7.132-7.132a1 1 0 0 0 0-1.418Z
-                  "/>
-                </svg>
+                <Image
+                  src={'/about-mark/about-24.svg'}
+                  width={17}
+                  height={17}
+                  className="pr-1"
+                />
                 About
             </div>
             <h2 className="text-gray-900 text-3xl font-extrabold mb-2">
-              Best react libraries around the web
+              Recent Graduate actively looking for jobs
             </h2>
             <p className="text-lg font-normal text-gray-500 mb-4">
-              Static websites are now used to bootstrap lots of websites and are 
-              becoming the basis for a variety of tools that even influence both 
-              web designers and developers.
+              I attended California State Polytechnic University, Pomona and studied Computer Science.
+              Cal Poly helped me learn a lot about Computer Science, but I am specifically interested
+              in Software Engineering and App Development.
             </p>
             <Link href="/About" 
-              className="text-violet-600 hover:underline font-medium text-lg inline-flex items-center"
+              className="text-indigo-600 hover:underline font-medium text-lg inline-flex items-center"
             >
               Read more
                 <svg 

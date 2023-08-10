@@ -10,8 +10,11 @@ const NavBar = () => {
   const pathname = usePathname();
 
   return (
-    <nav>
-      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
+    <nav 
+      className={`sticky top-0 w-full z-20 backdrop-blur-[4px] bg-gradient-to-br from-inherit`}
+    >
+      <div className='max-w-[1400px] flex flex-wrap md:flex-nowrap md:h-[70px] 
+      items-center justify-between mx-auto p-4'>
         <Link 
           href='/'
           className='flex items-center'
@@ -48,7 +51,7 @@ const NavBar = () => {
           </svg>
         </button>
         <div 
-          className={`w-full md:block md:w-auto ${toggleHam ? '' : 'hidden'}`}
+          className={`items-center justify-between w-full md:flex md:w-auto ${toggleHam ? '' : 'hidden'}`}
         >
           <ul 
             className='font-medium flex flex-col p-4 md:p-0 mt-4 border 
