@@ -12,6 +12,7 @@ const Hero = () => {
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
               <Image
                 src={'/me/me2.jpg'}
+                alt="my image"
                 width={750}
                 height={750}
                 className="rounded-[88px] shadow-[0px_25px_9px_-5px_rgba(0,0,0,0.24)]"
@@ -42,6 +43,7 @@ const Hero = () => {
           <div className="lg:hidden row-span-9 h-auto max-w-lg mx-auto">
               <Image
                 src={'/me/me2.jpg'}
+                alt="my image"
                 width={750}
                 height={750}
                 className="rounded-[88px] shadow-[0px_25px_9px_-5px_rgba(0,0,0,0.24)]"
@@ -69,9 +71,9 @@ const Hero = () => {
                 >
                   <path 
                     stroke="currentColor" 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round" 
-                    stroke-width="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    strokeWidth="2" 
                     d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"
                   />
                 </svg>
@@ -102,9 +104,9 @@ const Hero = () => {
                 >
                   <path 
                     stroke="currentColor" 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round" 
-                    stroke-width="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    strokeWidth="2" 
                     d="M1 5h12m0 0L9 1m4 4L9 9"
                   />
                 </svg>
@@ -118,6 +120,7 @@ const Hero = () => {
             >
                 <Image
                   src={'/about-mark/about-24.svg'}
+                  alt="about icon"
                   width={17}
                   height={17}
                   className="pr-1"
@@ -144,9 +147,9 @@ const Hero = () => {
                 >
                   <path 
                     stroke="currentColor" 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round" 
-                    stroke-width="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    strokeWidth="2" 
                     d="M1 5h12m0 0L9 1m4 4L9 9"
                   />
                 </svg>

@@ -21,6 +21,7 @@ const NavBar = () => {
         >
           <Image
             src={'/n/n-100.png'}
+            alt='N'
             width={70}
             height={70}
           />
@@ -73,9 +74,9 @@ const NavBar = () => {
             </li>
             <li>
               <Link
-                href='/Projects'
+                href='/Projects/'
                 className={`block py-2 pl-3 pr-4 rounded md:p-0
-                  ${ pathname === '/Projects' ? 
+                  ${ pathname.includes('/Projects') ? 
                   'text-white bg-violet-700 md:bg-transparent md:text-violet-700' 
                   : 'text-gray-900 hover:bg-violet-300 hover:text-white md:hover:bg-transparent md:border-0' 
                   + ' md:hover:text-violet-700'}`}

@@ -11,22 +11,25 @@ const Footer = () => {
         <p className='black text-xl font-bold'>Nathan Tran's Other Links</p>
         <div className='footer__links'>
             <Link href='https://www.linkedin.com/in/nathan-tran-a6455b164/'>
-                <Image 
-                  src={'linkedin-mark/linkedin.svg'}
-                  width={30}
-                  height={30}
-                />
+              <Image 
+                src={'/linkedin-mark/linkedin.svg'}
+                alt='linkedin'
+                width={30}
+                height={30}
+              />
             </Link>
             <Link href='https://github.com/RaidenXP'>
               <Image 
-                  src={'github-mark/github-mark.svg'}
+                  src={'/github-mark/github-mark.svg'}
+                  alt='github'
                   width={30}
                   height={30}
               />
             </Link>
             <Link href='https://twitter.com/Raiden_NT'>
               <Image 
-                  src={'twitter-mark/twitter.svg'}
+                  src={'/twitter-mark/twitter.svg'}
+                  alt='twitter'
                   width={25}
                   height={25}
               />

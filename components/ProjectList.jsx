@@ -1,25 +1,42 @@
+'use client';
+
 import Link from "next/link"
 
-const ProjectList = () => {
+import { usePathname } from 'next/navigation';
+
+const ProjectList = ({ setMenu, menuState }) => {
+  const pathname = usePathname();
+
   return (
     <>
       <ul className="block ms-0 me-0 m-0 p-0 list-none">
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects'
-            className="flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm hover:text-black font-medium text-blue-700"
+            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
+            py-1 text-left text-sm font-medium
+            ${ pathname === '/Projects' ? 'text-violet-700 hover:text-black' : 'hover:text-violet-700'}`}
+            onClick={() => {
+              if(setMenu)
+                setMenu(false)
+            }}
           >
-            Main Page
+            Welcome!
           </Link>
         </li>
       </ul>
       <ul className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
-            href='/Projects'
-            className="flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm hover:text-black font-medium text-blue-700"
+            href='/Projects/SpotColWebApp'
+            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
+            py-1 text-left text-sm font-medium
+            ${ pathname === '/Projects/SpotColWebApp' ? 'text-violet-700 hover:text-black' : 
+            'hover:text-violet-700'}`}
+            onClick={() => {
+              if(setMenu)
+                setMenu(false)
+            }}
           >
             Spotify Collaboration Web App
           </Link>
@@ -33,9 +50,15 @@ const ProjectList = () => {
       <ul className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
-            href='/Projects'
-            className="flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm hover:text-black font-medium text-blue-700"
+            href='/Projects/SousChef'
+            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
+            py-1 text-left text-sm font-medium
+            ${ pathname === '/Projects/SousChef' ? 'text-violet-700 hover:text-black' : 
+            'hover:text-violet-700'}`}
+            onClick={() => {
+              if(setMenu)
+                setMenu(false)
+            }}
           >
             Sous Chef Mobile App
           </Link>
@@ -49,9 +72,15 @@ const ProjectList = () => {
       <ul className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
-            href='/Projects'
-            className="flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm hover:text-black font-medium text-blue-700"
+            href='/Projects/TrainingTracker'
+            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
+            py-1 text-left text-sm font-medium
+            ${ pathname === '/Projects/TrainingTracker' ? 'text-violet-700 hover:text-black' : 
+            'hover:text-violet-700'}`}
+            onClick={() => {
+              if(setMenu)
+                setMenu(false)
+            }}
           >
             Training Tracker
           </Link>
@@ -65,9 +94,15 @@ const ProjectList = () => {
       <ul className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
-            href='/Projects'
-            className="flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm hover:text-black font-medium text-blue-700"
+            href='/Projects/DataMining'
+            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
+            py-1 text-left text-sm font-medium
+            ${ pathname === '/Projects/DataMining' ? 'text-violet-700 hover:text-black' : 
+            'hover:text-violet-700'}`}
+            onClick={() => {
+              if(setMenu)
+                setMenu(false)
+            }}
           >
             Data Mining Series
           </Link>
@@ -77,21 +112,36 @@ const ProjectList = () => {
                 <li className="my-1.5">
                   <Link href='/' className="flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900">
+                  text-sm hover:text-black text-gray-900"
+                  onClick={() => {
+                    if(setMenu)
+                      setMenu(false)
+                  }}
+                  >
                     Overview
                   </Link>
                 </li>
                 <li className="my-1.5">
                   <Link href='/' className="flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900">
+                  text-sm hover:text-black text-gray-900"
+                  onClick={() => {
+                    if(setMenu)
+                      setMenu(false)
+                  }}
+                  >
                     Results
                   </Link>
                 </li>
                 <li className="my-1.5">
                   <Link href='/' className="flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900">
+                  text-sm hover:text-black text-gray-900"
+                  onClick={() => {
+                    if(setMenu)
+                      setMenu(false)
+                  }}
+                  >
                     Credits
                   </Link>
                 </li>
@@ -104,9 +154,15 @@ const ProjectList = () => {
       <ul className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
-            href='/Projects'
-            className="flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm hover:text-black font-medium text-blue-700"
+            href='/Projects/GameAI'
+            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
+            py-1 text-left text-sm font-medium
+            ${ pathname === '/Projects/GameAI' ? 'text-violet-700 hover:text-black' : 
+            'hover:text-violet-700'}`}
+            onClick={() => {
+              if(setMenu)
+                setMenu(false)
+            }}
           >
             Game AI Series
           </Link>
@@ -116,21 +172,36 @@ const ProjectList = () => {
                 <li className="my-1.5">
                   <Link href='/' className="flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900">
+                  text-sm hover:text-black text-gray-900"
+                  onClick={() => {
+                    if(setMenu)
+                      setMenu(false)
+                  }}
+                  >
                     Overview
                   </Link>
                 </li>
                 <li className="my-1.5">
                   <Link href='/' className="flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900">
+                  text-sm hover:text-black text-gray-900"
+                  onClick={() => {
+                    if(setMenu)
+                      setMenu(false)
+                  }}
+                  >
                     Results
                   </Link>
                 </li>
                 <li className="my-1.5">
                   <Link href='/' className="flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900">
+                  text-sm hover:text-black text-gray-900"
+                  onClick={() => {
+                    if(setMenu)
+                      setMenu(false)
+                  }}
+                  >
                     Credits
                   </Link>
                 </li>
@@ -143,9 +214,15 @@ const ProjectList = () => {
       <ul className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
-            href='/Projects'
-            className="flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm hover:text-black font-medium text-blue-700"
+            href='/Projects/RayTracing'
+            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
+            py-1 text-left text-sm font-medium
+            ${ pathname === '/Projects/RayTracing' ? 'text-violet-700 hover:text-black' : 
+            'hover:text-violet-700'}`}
+            onClick={() => {
+              if(setMenu)
+                setMenu(false)
+            }}
           >
             Raytracing Series
           </Link>
@@ -155,21 +232,36 @@ const ProjectList = () => {
                 <li className="my-1.5">
                   <Link href='/' className="flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900">
+                  text-sm hover:text-black text-gray-900"
+                  onClick={() => {
+                    if(setMenu)
+                      setMenu(false)
+                  }}
+                  >
                     Overview
                   </Link>
                 </li>
                 <li className="my-1.5">
                   <Link href='/' className="flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900">
+                  text-sm hover:text-black text-gray-900"
+                  onClick={() => {
+                    if(setMenu)
+                      setMenu(false)
+                  }}
+                  >
                     Results
                   </Link>
                 </li>
                 <li className="my-1.5">
                   <Link href='/' className="flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900">
+                  text-sm hover:text-black text-gray-900"
+                  onClick={() => {
+                    if(setMenu)
+                      setMenu(false)
+                  }}
+                  >
                     Credits
                   </Link>
                 </li>
@@ -182,9 +274,15 @@ const ProjectList = () => {
       <ul className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
-            href='/Projects'
-            className="flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm hover:text-black font-medium text-blue-700"
+            href='/Projects/Portfolio'
+            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
+            py-1 text-left text-sm font-medium
+            ${ pathname === '/Projects/Portfolio' ? 'text-violet-700 hover:text-black' : 
+            'hover:text-violet-700'}`}
+            onClick={() => {
+              if(setMenu)
+                setMenu(false)
+            }}
           >
             This Portfolio!
           </Link>
