@@ -8,7 +8,7 @@ const MobileSideBar = () => {
 
   return (
     <div 
-      className="sticky top-[102px] z-10 md:hidden py-3 px-4 border-b backdrop-blur-sm
+      className="sticky top-[98px] z-10 md:hidden py-3 px-4 border-b backdrop-blur-sm
       backdrop-saturate-200"
     >
       <div

@@ -10,7 +10,7 @@ const Footer = () => {
       >
         <p className='black text-xl font-bold'>Nathan Tran's Other Links</p>
         <div className='footer__links'>
-            <Link href='https://www.linkedin.com/in/nathan-tran-a6455b164/'>
+            <Link href='https://www.linkedin.com/in/nathan-tran-a6455b164/' target='_blank' rel='noopener noreferrer'>
               <Image 
                 src={'/linkedin-mark/linkedin.svg'}
                 alt='linkedin'
@@ -18,7 +18,7 @@ const Footer = () => {
                 height={30}
               />
             </Link>
-            <Link href='https://github.com/RaidenXP'>
+            <Link href='https://github.com/RaidenXP' target='_blank' rel='noopener noreferrer'>
               <Image 
                   src={'/github-mark/github-mark.svg'}
                   alt='github'
@@ -26,7 +26,7 @@ const Footer = () => {
                   height={30}
               />
             </Link>
-            <Link href='https://twitter.com/Raiden_NT'>
+            <Link href='https://twitter.com/Raiden_NT' target='_blank' rel='noopener noreferrer'>
               <Image 
                   src={'/twitter-mark/twitter.svg'}
                   alt='twitter'
