@@ -1,41 +1,133 @@
-import React from 'react'
+'use client';
+
+import Image from "next/image"
+import Link from "next/link"
+import { useInView } from "react-intersection-observer";
+import { projectSous } from "@/constants";
+import RightPageNav from "@/components/RightPageNav";
 
 const SousChefPage = () => {
+  const {ref: toolsRef, inView: toolsView, entry: toolsEntry} = useInView({
+    threshold: 1
+  });
+  const {ref: resultsFirstRef, inView: resultsFirstView, entry: resultsFirstEntry} = useInView({
+    threshold: 0.5
+  });
+  const {ref: resultsSecondRef, inView: resultsSecondView, entry: resultsSecondEntry} = useInView({
+    threshold: 1
+  });
+  const {ref: resultsThirdRef, inView: resultsThirdView, entry: resultsThirdEntry} = useInView({
+    threshold: 1
+  });
+
+  projectSous[0].inView = toolsView;
+  projectSous[1].inView = resultsFirstView || resultsSecondView || resultsThirdView;
+  
   return (
     <>
       <article className='w-full min-w-0 max-w-6xl mt-4 px-1 md:px-6 
       min-h-[calc(100vh-103px)] block' 
       >
         <div className='max-w-none'>
-          Sous Chef Mobile App
+          <h1 className='break-words text-4xl font-semibold mb-8'>Sous Chef Mobile App</h1>
+          <p className='text-base my-5'>
+            Mobile App Development always interested me. Therefore, I wanted to try making one.
+            I found Flutter and its language Dart to help create a mobile app. I know of Kotlin,
+            but I saw that Flutter included pre-made components and can easily be used to create
+            a cross platform application. Sous Chef was created to help people write down recipes,
+            list ingredients and steps, and store other media, such as videos and images.
+          </p>
+          <h2 ref={toolsRef} id='tools' className='border-t border-gray-300 pt-10 mt-12 mb-6 
+          font-semibold text-2xl scroll-mt-[75px]'>
+            Tools Used
+          </h2>
+          <p className="mb-5">
+            For this app, I only needed a few items to create 
+            it. <span className="underline text-violet-700">
+                  <Link
+                    href='https://flutter.dev/'
+                    target='_blank' rel='noopener noreferrer'
+                  >
+                    Flutter
+                  </Link>
+            </span> provided many of the front-end
+            tools, such as components and routing. It's a open source UI software development kit created
+            by Google. 
+          </p>
+          <p className="my-5">
+            Because I wanted this app to be a social app and a place to store data, I needed a
+            back-end. As a result, I 
+            used <span className="underline text-violet-700">
+                <Link
+                  href='https://firebase.google.com/'
+                  target='_blank' rel='noopener noreferrer'
+                >
+                  Firebase
+                </Link>
+            </span>. It was pretty easy to connect Firebase to Flutter. Just download a few packages 
+            and everything should be up and running. The docs on Firebase and many videos online
+            helped configure everything.
+          </p>
+          <figure className='mb-5 flex justify-evenly items-center content-center'>
+            <Image
+              src={'/sous-chef/flutter.png'}
+              alt='flutter image'
+              width={150}
+              height={150}
+            />
+            <Image
+              src={'/sous-chef/firebase.png'}
+              alt='firebase image'
+              width={150}
+              height={150}
+            />
+          </figure>
+          <h2 id='results' className='border-t border-gray-300 pt-10 mt-12 mb-6 
+          font-semibold text-2xl scroll-mt-[75px]'>
+            Results
+          </h2>
+          <p className="mb-5">
+            As of right now, the App is no longer on the Google Play Store. I did not maintain it,
+            and I was inactive for a long time. In addition, the app can only store recipes on the 
+            public level. This means anyone can see the recipe that has been recorded. I did not have
+            the chance to implement authenthication/account login. 
+          </p>
+          <figure ref={resultsFirstRef} className='my-5 flex justify-evenly items-center content-center'>
+            <Image
+              src={'/sous-chef/main.jpg'}
+              alt='main page image'
+              width={300}
+              height={300}
+            />
+          </figure>
+          <p className="my-5">
+            The above is the main page for the mobile app. It contains cards for the recipe. The image is
+            selected from the media tab that will be shown below.
+          </p>
+          <p ref={resultsSecondRef} className="my-5">
+            The page below opens when you click on the recipe card. It contains three tabs. One for
+            ingredients, another for the steps, and finally a media tab. The ingredients and step tab
+            should look the same. They have the same container and layout. It just wasn't fully fleshed
+            out yet. Because I couldn't get the app working again and it is no longer on the app store,
+            I don't have an image for the media tab.
+          </p>
+          <figure className='my-5 flex justify-evenly items-center content-center'>
+            <Image
+              src={'/sous-chef/ingredients.jpg'}
+              alt='ingredients page image'
+              width={300}
+              height={300}
+            />
+          </figure>
+          <p ref={resultsThirdRef} className="mb-5">
+            Overall, I would say this project is incomplte and only about 20% done. There are a lot of
+            improvements that could be done. In addition, organization has to be improved for
+            both the database and the source code. I do want to come back to this one day. Next time,
+            I start from the bottom again instead of build on top of this verison.
+          </p>
         </div>
       </article>
-      <nav
-        className='w-56 shrink-0 order-last hidden lg:block'
-      >
-        <div className='sticky top-[126px] h-[calc(100vh-121px)]'>
-          <div className='mb-1 mt-[7px] text-sm font-medium text-black'>
-            On this page
-          </div>
-          <div className='relative'>
-            <div className='absolute top-0 left-0 w-full h-3 bg-gradient-to-b from-inherit z-1'></div>
-            <div className='absolute bottom-0 left-0 z-10 w-full h-3 bg-gradient-to-t from-inherit'></div>
-            <ul className='space-y-2.5 py-2 text-sm overflow-y-auto max-h-[70vh]'>
-              <li>
-                <div className='block text-gray-600 hover:text-blue-400 leading-[1.6]'>
-                  Test
-                </div>
-              </li>
-              <li>
-                <div className='block text-gray-600 hover:text-blue-400 leading-[1.6]'>
-                  Test
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div className='pt-5 mt-3 space-y-2 text-sm text-gray-900 border-t border-gray-200'></div>
-        </div>
-      </nav>
+      <RightPageNav items={projectSous}/>
     </>
   )
 }

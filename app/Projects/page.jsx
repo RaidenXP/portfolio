@@ -1,6 +1,31 @@
+'use client';
+
+import RightPageNav from "@/components/RightPageNav"
+import { projectMain } from "@/constants"
+
+import { useInView } from "react-intersection-observer";
+
 import Link from "next/link"
 
 const Projects = () => {
+  const {ref: whatRef, inView: whatView, entry: whatEntry} = useInView({
+    threshold: 1
+  });
+  const {ref: tableRef, inView: tableView, entry: tableEntry} = useInView({
+    threshold: 1
+  });
+  const {ref: navRef, inView: navView, entry: navEntry} = useInView({
+    threshold: 1
+  });
+  const {ref: creditRef, inView: creditView, entry: creditEntry} = useInView({
+    threshold: 1
+  });
+
+  projectMain[0].inView = whatView
+  projectMain[1].inView = tableView
+  projectMain[2].inView = navView
+  projectMain[3].inView = creditView
+
   return (
     <>
       <article className='w-full min-w-0 max-w-6xl mt-4 px-1 md:px-6 
@@ -9,7 +34,7 @@ const Projects = () => {
         <div className='max-w-none'>
           <h1 className='break-words text-4xl font-semibold mb-8'>Intro</h1>
           <p className='text-base my-5'>Welcome to the project box!</p>
-          <h2 id='what-is-this' className='border-t border-gray-300 pt-10 mt-12 mb-6 
+          <h2 id='what-is-this' ref={whatRef} className='border-t border-gray-300 pt-10 mt-12 mb-6 
           font-semibold text-2xl scroll-mt-[75px]'>
             What's the Project Box?
           </h2>
@@ -27,7 +52,7 @@ const Projects = () => {
           <p className='mb-5'>
             List of Projects:
           </p>
-          <table className='my-7 w-full table-auto text-left text-sm 
+          <table ref={tableRef} className='my-7 w-full table-auto text-left text-sm 
           indent-0 border-collapse border-inherit table'>
             <thead className='border-b border-gray-300'>
               <tr>
@@ -151,7 +176,7 @@ const Projects = () => {
             table of contents above has clickable links to help go straight to whatever project you would 
             like to see first.
           </p>
-          <p className="my-5">
+          <p ref={navRef} className="my-5">
             If you are on desktop or a larger screen, there will be a right-side navagation bar that will help
             you traverse a page quickly to specific headers within the current page.
           </p>
@@ -159,10 +184,11 @@ const Projects = () => {
             Lastly, on the bottom of the page are three icon links that can take you to my LinkedIn, GitHub, or
             Twitter page.
           </p>
-          <h2 id='credits' className='border-t border-gray-300 pt-10 mt-12 mb-6 font-semibold scroll-mt-[75px] text-2xl'>
+          <h2 id='credits'
+          className='border-t border-gray-300 pt-10 mt-12 mb-6 font-semibold scroll-mt-[75px] text-2xl'>
             Credits
           </h2>
-          <p className="mb-5">
+          <p ref={creditRef} className="mb-5">
             Before continuing, I just wanted to thank maybe of the different "docs" pages
             from <span className="inline underline text-violet-700">
               <Link href='https://tailwindcss.com/' target='_blank' rel='noopener noreferrer'>
@@ -180,44 +206,8 @@ const Projects = () => {
         </div>
       </article>
       
-
       {/** Whats on the page */}
-      <nav
-        className='w-56 shrink-0 order-last hidden lg:block'
-      >
-        <div className='sticky top-[126px] h-[calc(100vh-121px)]'>
-          <div className='mb-1 mt-[7px] text-sm font-medium text-black'>
-            On this page
-          </div>
-          <div className='relative'>
-            <ul className='space-y-2.5 py-2 text-sm overflow-y-auto max-h-[70vh]'>
-              <li>
-                <Link href='#what-is-this' className='block text-gray-600 hover:text-violet-700 leading-[1.6]'>
-                  What's the Project Box?
-                </Link>
-              </li>
-              <li>
-                <Link href='#table-of-contents' 
-                className='block text-gray-600 hover:text-violet-700 leading-[1.6]'>
-                  Table Of Contents
-                </Link>
-              </li>
-              <li>
-                <Link href='#navigation'
-                className='block text-gray-600 hover:text-violet-700 leading-[1.6]'>
-                  How to Navigate Around
-                </Link>
-              </li>
-              <li>
-                <Link href='#credits' className='block text-gray-600 hover:text-violet-700 leading-[1.6]'>
-                  Credits
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className='pt-5 mt-3 space-y-2 text-sm text-gray-900 border-t border-gray-300'></div>
-        </div>
-      </nav>
+      <RightPageNav items={projectMain}/>
     </>
   )
 }
