@@ -22,7 +22,16 @@ export const projectMain = [
 ]
 
 export const projectTrain = [
-  
+  {
+    title: 'Tools Used',
+    id: '#tools',
+    inView: false
+  },
+  {
+    title: 'Current State',
+    id: '#current',
+    inView: false
+  }
 ]
 
 export const projectSpot = [
