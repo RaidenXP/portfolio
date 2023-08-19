@@ -1,10 +1,10 @@
 'use client';
 
 import RightPageNav from '@/components/RightPageNav'
+import Linkable from '@/components/Linkable';
 import { projectSpot } from '@/constants'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer';
-import Link from 'next/link';
 
 const SpotColWebAppPage = () => {
   const {ref: teamsRef, inView: teamsView, entry: teamsEntry} = useInView({
@@ -64,14 +64,10 @@ const SpotColWebAppPage = () => {
             />
             <figcaption className='text-center mt-5'>
               Credit 
-              to <span className='underline text-violet-700'>
-                <Link
-                  href='https://kenzie.snhu.edu/blog/front-end-vs-back-end-whats-the-difference/'
-                  target='_blank' rel='noopener noreferrer'
-                >
-                  Kenzie Academy
-                </Link>
-              </span>
+              to <Linkable
+                link='https://kenzie.snhu.edu/blog/front-end-vs-back-end-whats-the-difference/'
+                text='Kenzie Academy'
+              />
             </figcaption>
           </figure>
           <h2 id='tools' className='border-t border-gray-300 pt-10 mt-12 mb-6 
@@ -90,15 +86,10 @@ const SpotColWebAppPage = () => {
           </p>
           <p className='my-5'>
             Anyways, lets continue. For back-end development, I mentioned that we used python as our language.
-            We found a library known 
-            as <span className='underline text-violet-700'>
-              <Link
-                href='https://flask.palletsprojects.com/en/2.3.x/'
-                target='_blank' rel='noopener noreferrer'
-              >
-                Python Flask
-              </Link>
-            </span>. Using flask gave us some sort of API to fetch data. With other python libraries 
+            We found a library known as <Linkable 
+            link='https://flask.palletsprojects.com/en/2.3.x/' 
+            text='Python Flask'
+            />. Using flask gave us some sort of API to fetch data. With other python libraries 
             we could communicate with Spotify's API and authenthication tools. This allowed us to let users
             sign in and start making playlists for their accounts. Furthermore, we made calls to our back-end
             to make queries for songs based on artists, title, or genre. Unfortunately, only the top
@@ -127,14 +118,10 @@ const SpotColWebAppPage = () => {
             go over it more in my mobile app projects, but its because a development kit for mobile apps. It
             contains many pre-built components to build apps. Because I worked on with Flutter before
             this project, I wanted something similar. Therefore, instead of using traditional 
-            CSS, I found <span className='underline text-violet-700'>
-              <Link
-                  href='https://mui.com/'
-                  target='_blank' rel='noopener noreferrer'
-              >
-                MUI
-              </Link>
-            </span>. It is a component library that contains many of the modern designs that companies, such as
+            CSS, I found <Linkable 
+              link='https://mui.com/' 
+              text='MUI'
+            />. It is a component library that contains many of the modern designs that companies, such as
             Spotify, Neflix, and Amazon uses. It was quick and easy to put in components that I needed for the
             site. By the way, I'm not using MUI for this site though. I really wanted to try CSS and Tailwind.
             It's my first time and it has been pretty fun.

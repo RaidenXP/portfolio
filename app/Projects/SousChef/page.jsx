@@ -1,10 +1,13 @@
 'use client';
 
 import Image from "next/image"
-import Link from "next/link"
+
 import { useInView } from "react-intersection-observer";
+
 import { projectSous } from "@/constants";
+
 import RightPageNav from "@/components/RightPageNav";
+import Linkable from "@/components/Linkable";
 
 const SousChefPage = () => {
   const {ref: toolsRef, inView: toolsView, entry: toolsEntry} = useInView({
@@ -43,28 +46,20 @@ const SousChefPage = () => {
           </h2>
           <p className="mb-5">
             For this app, I only needed a few items to create 
-            it. <span className="underline text-violet-700">
-                  <Link
-                    href='https://flutter.dev/'
-                    target='_blank' rel='noopener noreferrer'
-                  >
-                    Flutter
-                  </Link>
-            </span> provided many of the front-end
+            it. <Linkable
+              link='https://flutter.dev/'
+              text='Flutter'
+            /> provided many of the front-end
             tools, such as components and routing. It's a open source UI software development kit created
             by Google. 
           </p>
           <p className="my-5">
             Because I wanted this app to be a social app and a place to store data, I needed a
             back-end. As a result, I 
-            used <span className="underline text-violet-700">
-                <Link
-                  href='https://firebase.google.com/'
-                  target='_blank' rel='noopener noreferrer'
-                >
-                  Firebase
-                </Link>
-            </span>. It was pretty easy to connect Firebase to Flutter. Just download a few packages 
+            used <Linkable
+              link='https://firebase.google.com/'
+              text='Firebase'
+            />. It was pretty easy to connect Firebase to Flutter. Just download a few packages 
             and everything should be up and running. The docs on Firebase and many videos online
             helped configure everything.
           </p>

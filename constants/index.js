@@ -21,19 +21,6 @@ export const projectMain = [
   },
 ]
 
-export const projectTrain = [
-  {
-    title: 'Tools Used',
-    id: '#tools',
-    inView: false
-  },
-  {
-    title: 'Current State',
-    id: '#current',
-    inView: false
-  }
-]
-
 export const projectSpot = [
   {
     title: 'Teams',
@@ -65,11 +52,44 @@ export const projectSous = [
   }
 ]
 
-export const projectRay = [
+export const projectTrain = [
+  {
+    title: 'Tools Used',
+    id: '#tools',
+    inView: false
+  },
+  {
+    title: 'Current State',
+    id: '#current',
+    inView: false
+  }
+]
+
+export const projectDataMain = [
+  {
+    title: 'Parts',
+    id: '#parts',
+    inView: false
+  },
+]
+
+export const projectDataExtract = [
 
 ]
 
-export const projectPort = [
+export const projectDataVisual = [
+
+]
+
+export const projectDataCluster = [
+
+]
+
+export const projectDataPattern = [
+
+]
+
+export const projectDataClassification = [
 
 ]
 
@@ -77,6 +97,10 @@ export const projectGameAI = [
 
 ]
 
-export const projectData = [
+export const projectRay = [
+
+]
+
+export const projectPort = [
 
 ]

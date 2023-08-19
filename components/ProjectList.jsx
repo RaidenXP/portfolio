@@ -110,39 +110,83 @@ const ProjectList = ({ setMenu, menuState }) => {
             <div className="relative">
               <ul className="mb-0 px-0.5 ">
                 <li className="my-1.5">
-                  <Link href='/' className="flex w-full relative cursor-pointer 
+                  <Link href='/Projects/DataMining/DataExtraction' 
+                  className={`flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900"
+                  text-sm hover:text-black text-gray-900
+                  ${ pathname === '/Projects/DataMining/DataExtraction' ? 
+                  'text-violet-700 hover:text-black' : 
+                  'hover:text-violet-700'}`}
                   onClick={() => {
                     if(setMenu)
                       setMenu(false)
                   }}
                   >
-                    Overview
+                    Data Extraction
                   </Link>
                 </li>
                 <li className="my-1.5">
-                  <Link href='/' className="flex w-full relative cursor-pointer 
+                  <Link href='/Projects/DataMining/DataVisualization' 
+                  className={`flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900"
+                  text-sm hover:text-black text-gray-900
+                  ${ pathname === '/Projects/DataMining/DataVisualization' ? 
+                  'text-violet-700 hover:text-black' : 
+                  'hover:text-violet-700'}`}
                   onClick={() => {
                     if(setMenu)
                       setMenu(false)
                   }}
                   >
-                    Results
+                    Data Visualization
                   </Link>
                 </li>
                 <li className="my-1.5">
-                  <Link href='/' className="flex w-full relative cursor-pointer 
+                  <Link href='/Projects/DataMining/Clustering' 
+                  className={`flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900"
+                  text-sm hover:text-black text-gray-900
+                  ${ pathname === '/Projects/DataMining/Clustering' ? 
+                  'text-violet-700 hover:text-black' : 
+                  'hover:text-violet-700'}`}
                   onClick={() => {
                     if(setMenu)
                       setMenu(false)
                   }}
                   >
-                    Credits
+                    Clustering
+                  </Link>
+                </li>
+                <li className="my-1.5">
+                  <Link href='/Projects/DataMining/FrequentPatternMining' 
+                  className={`flex w-full relative cursor-pointer 
+                  items-center justify-between rounded-md pl-2 py-1 text-left
+                  text-sm hover:text-black text-gray-900
+                  ${ pathname === '/Projects/DataMining/FrequentPatternMining' ? 
+                  'text-violet-700 hover:text-black' : 
+                  'hover:text-violet-700'}`}
+                  onClick={() => {
+                    if(setMenu)
+                      setMenu(false)
+                  }}
+                  >
+                    Frequent Pattern Mining
+                  </Link>
+                </li>
+                <li className="my-1.5">
+                  <Link href='/Projects/DataMining/Classification' 
+                  className={`flex w-full relative cursor-pointer 
+                  items-center justify-between rounded-md pl-2 py-1 text-left
+                  text-sm hover:text-black text-gray-900
+                  ${ pathname === '/Projects/DataMining/Classification' ? 
+                  'text-violet-700 hover:text-black' : 
+                  'hover:text-violet-700'}`}
+                  onClick={() => {
+                    if(setMenu)
+                      setMenu(false)
+                  }}
+                  >
+                    Classification
                   </Link>
                 </li>
               </ul>

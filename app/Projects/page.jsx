@@ -1,6 +1,7 @@
 'use client';
 
 import RightPageNav from "@/components/RightPageNav"
+import Linkable from "@/components/Linkable";
 import { projectMain } from "@/constants"
 
 import { useInView } from "react-intersection-observer";
@@ -190,17 +191,14 @@ const Projects = () => {
           </h2>
           <p ref={creditRef} className="mb-5">
             Before continuing, I just wanted to thank maybe of the different "docs" pages
-            from <span className="inline underline text-violet-700">
-              <Link href='https://tailwindcss.com/' target='_blank' rel='noopener noreferrer'>
-                TailwindCSS
-              </Link>   
-            </span> and <span className="inline underline text-violet-700">
-              <Link href='https://nextjs.org/' target='_blank' rel='noopener noreferrer'>
-                NextJS
-              </Link>
-            </span> for 
-            heavily influencing the design for this page. 
-            I thought it was the best looking/oragnization
+            from <Linkable 
+              link='https://tailwindcss.com/' 
+              text='TailwindCSS'
+            /> and <Linkable 
+              link='https://nextjs.org/' 
+              text='NextJS'
+            /> for 
+            heavily influencing the design for this page. I thought it was the best looking/oragnization
             method to store a list of my projects.
           </p>
         </div>

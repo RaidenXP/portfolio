@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { projectTrain } from "@/constants";
 import RightPageNav from "@/components/RightPageNav";
+import Linkable from "@/components/Linkable";
 
 import { useInView } from "react-intersection-observer";
 
@@ -16,16 +17,16 @@ const TrainingTrackerPage = () => {
     threshold: 1
   });
   const {ref: currentFirstRef, inView: currentFirstView, entry: currentFirstEntry} = useInView({
-    threshold: 1
+    threshold: 0.3
   });
   const {ref: currentSecondRef, inView: currentSecondView, entry: currentSecondEntry} = useInView({
-    threshold: 0.5
+    threshold: 0.2
   });
   const {ref: currentThirdRef, inView: currentThirdView, entry: currentThirdEntry} = useInView({
-    threshold: 0.5
+    threshold: 0.2
   });
   const {ref: currentFourthRef, inView: currentFourthView, entry: currentFourthEntry} = useInView({
-    threshold: 0.5
+    threshold: 0.2
   });
 
   projectTrain[0].inView = toolsFirstView || toolsSecondView
@@ -57,28 +58,18 @@ const TrainingTrackerPage = () => {
           <p className="my-5">
             Because we are using flutter for this project, many of the front-end components are already provided.
             However, I wanted more components to help bring the app to 
-            life. <span className="underline text-violet-700">
-              <Link
-                href='https://pub.dev/packages/expandable'
-                target='_blank' rel='noopener noreferrer'
-              >
-                Expandable
-              </Link>
-            </span>, <span className="underline text-violet-700">
-              <Link
-                href='https://pub.dev/packages/flutter_slidable'
-                target='_blank' rel='noopener noreferrer'
-              >
-                Slidable
-              </Link>
-            </span>, and <span className="underline text-violet-700">
-              <Link
-                href='https://pub.dev/packages/animations'
-                target='_blank' rel='noopener noreferrer'
-              >
-                Animations
-              </Link>
-            </span> helped satistify what I needed. These packages helped create smooth animated components.
+            life. <Linkable
+              link='https://pub.dev/packages/expandable'
+              text='Expandable'
+            />
+            , <Linkable
+              link='https://pub.dev/packages/flutter_slidable'
+              text='Slidable'
+            />
+            , and <Linkable
+              link='https://pub.dev/packages/animations'
+              text='Animations'
+            /> helped satistify what I needed. These packages helped create smooth animated components.
           </p>
           <figure ref={toolsFirstRef} className='my-5 flex xl:flex-row flex-col justify-evenly items-center'>
             <Image
@@ -111,27 +102,19 @@ const TrainingTrackerPage = () => {
           <p className="my-5">
             Compared to Sous Chef (the first mobile app) the backend storage was easier to implement and
             smaller. We
-            used <span className="underline text-violet-700">
-              <Link
-                href='https://pub.dev/packages/hive'
-                target='_blank' rel='noopener noreferrer'
-              >
-                Hive
-              </Link>
-            </span>. This package allowed us to have data stored on the local device rather than a database.
+            used <Linkable 
+              link='https://pub.dev/packages/hive' 
+              text='Hive'
+            />. This package allowed us to have data stored on the local device rather than a database.
             We wanted something that didn't deal with an online database, such as Firebase or MongoDB. We wanted
             something simplier and straightforward.
           </p>
           <p ref={toolsSecondRef} className="my-5">
             Next, to get data around the app, we used providers. Specifially from the 
-            package <span className="underline text-violet-700">
-              <Link
-                href='https://riverpod.dev/'
-                target='_blank' rel='noopener noreferrer'
-              >
-                Riverpod
-              </Link>  
-            </span>. I am going to be honest. At the time of writing this, providers are a completely new topic
+            package <Linkable
+              link='https://riverpod.dev/'
+              text='Riverpod'
+            />. I am going to be honest. At the time of writing this, providers are a completely new topic
             for me. I don't really understand how they work or why we would use them. I tried watching videos
             and reading documentation to understand what they are, but I am still having trouble understanding
             them. However, it seems like it is an easy way for passing data throughout the entire app. I had
@@ -167,7 +150,7 @@ const TrainingTrackerPage = () => {
             Add, Edit, and Delete workout day. In the example, I added arms as a day. Deleted chest.
             Then edited arms and changed it into chest.
           </p>
-          <figure ref={currentFirstRef} className='my-5 flex justify-evenly items-center'>
+          <figure ref={currentFirstRef} className='my-5 flex xl:flex-row flex-col justify-evenly items-center'>
             <Image
               src='/training-track/add.gif'
               alt="add day"
@@ -179,6 +162,7 @@ const TrainingTrackerPage = () => {
               alt="delete day"
               width={200}
               height={200}
+              className="my-5 xl:my-0"
             />
             <Image
               src='/training-track/edit.gif'
@@ -190,7 +174,7 @@ const TrainingTrackerPage = () => {
           <p className="my-5">
             Transitions from day to workouts page. Then workouts to the add workout page.
           </p>
-          <figure ref={currentSecondRef} className='my-5 flex justify-evenly items-center'>
+          <figure ref={currentSecondRef} className='my-5 flex xl:flex-row flex-col justify-evenly items-center'>
             <Image
               src='/training-track/transition.gif'
               alt="transition-1"
@@ -202,6 +186,7 @@ const TrainingTrackerPage = () => {
               alt="transition-2"
               width={250}
               height={250}
+              className="mt-5 xl:mt-0"
             />
           </figure>
           <p className="my-5">

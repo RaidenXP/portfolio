@@ -25,9 +25,6 @@ const NavBar = () => {
             width={70}
             height={70}
           />
-          {/* <span className='self-center text-2xl font-semibold whitespace-nowrap'>
-            Nathan's Portfolio
-          </span> */}
         </Link>
         <button
           type='button' 
