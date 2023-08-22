@@ -14,7 +14,7 @@ const DataMiningPage = () => {
     threshold: 1
   });
   const {ref: partsRef, inView: partsView, entry: partsEntry} = useInView({
-    threshold: 1
+    threshold: 0.5
   });
 
   projectDataMain[0].inView = langView

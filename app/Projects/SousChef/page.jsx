@@ -13,18 +13,12 @@ const SousChefPage = () => {
   const {ref: toolsRef, inView: toolsView, entry: toolsEntry} = useInView({
     threshold: 1
   });
-  const {ref: resultsFirstRef, inView: resultsFirstView, entry: resultsFirstEntry} = useInView({
-    threshold: 0.5
-  });
-  const {ref: resultsSecondRef, inView: resultsSecondView, entry: resultsSecondEntry} = useInView({
-    threshold: 1
-  });
-  const {ref: resultsThirdRef, inView: resultsThirdView, entry: resultsThirdEntry} = useInView({
-    threshold: 1
+  const {ref: resultsRef, inView: resultsView, entry: resultsEntry} = useInView({
+    threshold: 0.25
   });
 
   projectSous[0].inView = toolsView;
-  projectSous[1].inView = resultsFirstView || resultsSecondView || resultsThirdView;
+  projectSous[1].inView = resultsView;
   
   return (
     <>
@@ -77,49 +71,51 @@ const SousChefPage = () => {
               height={150}
             />
           </figure>
-          <h2 id='results' className='border-t border-gray-300 pt-10 mt-12 mb-6 
-          font-semibold text-2xl scroll-mt-[75px]'>
-            Results
-          </h2>
-          <p className="mb-5">
-            As of right now, the App is no longer on the Google Play Store. I did not maintain it,
-            and I was inactive for a long time. In addition, the app can only store recipes on the 
-            public level. This means anyone can see the recipe that has been recorded. I did not have
-            the chance to implement authenthication/account login. 
-          </p>
-          <figure ref={resultsFirstRef} className='my-5 flex justify-evenly items-center content-center'>
-            <Image
-              src={'/sous-chef/main.jpg'}
-              alt='main page image'
-              width={300}
-              height={300}
-            />
-          </figure>
-          <p className="my-5">
-            The above is the main page for the mobile app. It contains cards for the recipe. The image is
-            selected from the media tab that will be shown below.
-          </p>
-          <p ref={resultsSecondRef} className="my-5">
-            The page below opens when you click on the recipe card. It contains three tabs. One for
-            ingredients, another for the steps, and finally a media tab. The ingredients and step tab
-            should look the same. They have the same container and layout. It just wasn't fully fleshed
-            out yet. Because I couldn't get the app working again and it is no longer on the app store,
-            I don't have an image for the media tab.
-          </p>
-          <figure className='my-5 flex justify-evenly items-center content-center'>
-            <Image
-              src={'/sous-chef/ingredients.jpg'}
-              alt='ingredients page image'
-              width={300}
-              height={300}
-            />
-          </figure>
-          <p ref={resultsThirdRef} className="mb-5">
-            Overall, I would say this project is incomplte and only about 20% done. There are a lot of
-            improvements that could be done. In addition, organization has to be improved for
-            both the database and the source code. I do want to come back to this one day. Next time,
-            I start from the bottom again instead of build on top of this verison.
-          </p>
+          <div ref={resultsRef}>
+            <h2 id='results' className='border-t border-gray-300 pt-10 mt-12 mb-6 
+            font-semibold text-2xl scroll-mt-[75px]'>
+              Results
+            </h2>
+            <p className="mb-5">
+              As of right now, the App is no longer on the Google Play Store. I did not maintain it,
+              and I was inactive for a long time. In addition, the app can only store recipes on the 
+              public level. This means anyone can see the recipe that has been recorded. I did not have
+              the chance to implement authenthication/account login. 
+            </p>
+            <figure className='my-5 flex justify-evenly items-center content-center'>
+              <Image
+                src={'/sous-chef/main.jpg'}
+                alt='main page image'
+                width={300}
+                height={300}
+              />
+            </figure>
+            <p className="my-5">
+              The above is the main page for the mobile app. It contains cards for the recipe. The image is
+              selected from the media tab that will be shown below.
+            </p>
+            <p className="my-5">
+              The page below opens when you click on the recipe card. It contains three tabs. One for
+              ingredients, another for the steps, and finally a media tab. The ingredients and step tab
+              should look the same. They have the same container and layout. It just wasn't fully fleshed
+              out yet. Because I couldn't get the app working again and it is no longer on the app store,
+              I don't have an image for the media tab.
+            </p>
+            <figure className='my-5 flex justify-evenly items-center content-center'>
+              <Image
+                src={'/sous-chef/ingredients.jpg'}
+                alt='ingredients page image'
+                width={300}
+                height={300}
+              />
+            </figure>
+            <p className="mb-5">
+              Overall, I would say this project is incomplte and only about 20% done. There are a lot of
+              improvements that could be done. In addition, organization has to be improved for
+              both the database and the source code. I do want to come back to this one day. Next time,
+              I start from the bottom again instead of build on top of this verison.
+            </p>
+          </div>
         </div>
       </article>
       <RightPageNav items={projectSous}/>
