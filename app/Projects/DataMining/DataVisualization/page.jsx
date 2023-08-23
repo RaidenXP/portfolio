@@ -157,45 +157,49 @@ const DataVisualPage = () => {
               negative reviews. You can see that some of the bigger games on the top right are not solid
               green and closer to the middle. They are defintely in the mixed reviews section.
             </p>
-            <Image
-              src={'/data-mining/Owners_vs_Pos_Revs.png'}
-              alt="owners vs pos revs"
-              width={700}
-              height={700}
-              className="my-5"
-            />
+            <figure className='my-5 flex justify-evenly items-center content-center'>
+              <Image
+                src={'/data-mining/Owners_vs_Pos_Revs.png'}
+                alt="owners vs pos revs"
+                width={700}
+                height={700}
+              />
+            </figure>
             <p className="my-5">
               The next graphs are the bar graphs. The top one is the singular genres on their own. The bottom
               one contains data on all the combinations. For the singular one, indie had the most games.
               In the combinations graph, the genre action on its own was the highest.
             </p>
-            <Image
-              src={'/data-mining/Genres_and_Top20GenreCombos_vs_GameCount.png'}
-              alt="owners vs pos revs"
-              width={700}
-              height={700}
-              className="my-5"
-            />
+            <figure className='my-5 flex justify-evenly items-center content-center'>
+              <Image
+                src={'/data-mining/Genres_and_Top20GenreCombos_vs_GameCount.png'}
+                alt="owners vs pos revs"
+                width={700}
+                height={700}
+              />
+            </figure>
             <p className="my-5">
               This first word cloud is the one for combinations.
             </p>
-            <Image
-              src={'/data-mining/GenreCombos_WordCloud.png'}
-              alt="owners vs pos revs"
-              width={700}
-              height={700}
-              className="my-5"
-            />
+            <figure className='my-5 flex justify-evenly items-center content-center'>
+              <Image
+                src={'/data-mining/GenreCombos_WordCloud.png'}
+                alt="owners vs pos revs"
+                width={700}
+                height={700}
+              />
+            </figure>
             <p className="my-5">
               The final word cloud is the genres on their own.
             </p>
-            <Image
-              src={'/data-mining/Genre_WordCloud.png'}
-              alt="owners vs pos revs"
-              width={700}
-              height={700}
-              className="mb-5"
-            />
+            <figure className='mb-5 flex justify-evenly items-center content-center'>
+              <Image
+                src={'/data-mining/Genre_WordCloud.png'}
+                alt="owners vs pos revs"
+                width={700}
+                height={700}
+              />
+            </figure>
           </div>
         </div>
       </article>
