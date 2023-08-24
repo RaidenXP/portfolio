@@ -41,7 +41,7 @@ const Projects = () => {
           </h2>
           <p className='mb-5'>
             The project box is where you will get to experience the projects that I have worked on.
-            I will go over my thought process for each of them and the steps on creating them.
+            I will go over my thought process for each of them and the steps towards creating them.
             These projects are only a few of the ones that I have worked on, but they are the ones
             that are important to me. I've learned the most from these projects, and I enjoyed working
             on all of them.
@@ -115,14 +115,14 @@ const Projects = () => {
                   </Link>
                 </td>
                 <td className="pl-2 py-2 pr-[0px]">
-                  Five-part series on special topics for Data Mining. These are python scripts that I've wrote
+                  Four-part series on special topics for Data Mining. These are python scripts that I've wrote
                   for one of my classes to extract data from Steam and analyze the results.
                 </td>
               </tr>
               <tr className="border-b border-gray-300">
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
-                    href='/Projects/GameAI'
+                    href='/Projects/WIP'
                     className="text-violet-700"
                   >
                     Game AI Series
@@ -136,10 +136,10 @@ const Projects = () => {
               <tr className="border-b border-gray-300">
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
-                    href='/Projects/RayTracing'
+                    href='/Projects/WIP'
                     className="text-violet-700"
                   >
-                    Raytracing Series
+                    Raytracer
                   </Link>
                 </td>
                 <td className="pl-2 py-2 pr-[0px]">
@@ -151,7 +151,7 @@ const Projects = () => {
               <tr>
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
-                    href='/Projects/Portfolio'
+                    href='/Projects/WIP'
                     className="text-violet-700"
                   >
                     Portfolio
@@ -159,8 +159,8 @@ const Projects = () => {
                 </td>
                 <td className="pl-2 py-2 pr-[0px]">
                   Another of the few web development projects I have done. This is officially my second one;
-                  however, I have done other web page projects, but they were solely following tutorials.
-                  For this project, I've been utilizing parts and pieces of what I learned to create something
+                  however, I have done other web page projects, but they were done following tutorials.
+                  For this project, I've been utilizing parts and pieces of what I've learned to create something
                   of my own.
                 </td>
               </tr>
@@ -172,14 +172,14 @@ const Projects = () => {
           </h2>
           <p className='mb-5'>
             To navigate around the project box, I've created a sidebar that lists all of the projects from
-            the table of contents. However, if you are on mobile, you can find this side bar by clicking
-            Menu found on top of your screen under the logo and navigation button. In addition, the 
+            the table of contents. If you are on mobile, you can find this side bar by clicking
+            'Menu' found on top of your screen under the logo and navigation button. In addition, the 
             table of contents above has clickable links to help go straight to whatever project you would 
             like to see first.
           </p>
           <p ref={navRef} className="my-5">
             If you are on desktop or a larger screen, there will be a right-side navagation bar that will help
-            you traverse a page quickly to specific headers within the current page.
+            you traverse within a page quickly to specific headers.
           </p>
           <p className='mb-5'>
             Lastly, on the bottom of the page are three icon links that can take you to my LinkedIn, GitHub, or
@@ -190,15 +190,14 @@ const Projects = () => {
             Credits
           </h2>
           <p ref={creditRef} className="mb-5">
-            Before continuing, I just wanted to thank maybe of the different "docs" pages
-            from <Linkable 
+            Before continuing, I just wanted to thank some sites for their "docs" pages
+            for heavily influencing the design of this page: <Linkable 
               link='https://tailwindcss.com/' 
               text='TailwindCSS'
             /> and <Linkable 
               link='https://nextjs.org/' 
               text='NextJS'
-            /> for 
-            heavily influencing the design for this page. I thought it was the best looking/oragnization
+            />. I thought it was the best looking/oragnization
             method to store a list of my projects.
           </p>
         </div>

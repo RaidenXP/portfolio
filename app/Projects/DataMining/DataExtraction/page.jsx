@@ -30,7 +30,7 @@ const DataExtractionPage = () => {
             Data Extraction
           </h1>
           <p className='text-base my-5'>
-            For the entire series, I will be showing both the code and the results if I have any.
+            For the entire series, I will be showing both the code and the results.
             It has been a long time since reviewing this series, so I will try my best to explain
             what is going on. For this first part, it is pretty straightforward. I wrote a script
             to extract data using 

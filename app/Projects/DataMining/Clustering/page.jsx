@@ -42,8 +42,8 @@ const ClusteringPage = () => {
             Part three of this series contains a lot of code. Most of the code was actually
             provided by my professor, and we were only required to complete a specific algorithm
             for clustering: K-means aka Lloyds Algorithm. Simply put, clustering is a method 
-            for placing objects into groups. These objects are usually similar and can help data 
-            analysts learn something about their entries.
+            for placing objects into groups. These groupings can help data 
+            analysts learn similarities about their entries.
           </p>
           <div ref={frameworkRef}>
             <h2 id="framework" className='border-t border-gray-300 pt-10 mt-12 mb-6 font-semibold 
@@ -63,7 +63,7 @@ const ClusteringPage = () => {
               The files that I created were analysis.py and make_norm_csv.py. Analysis.py was created to
               use k-means and k-mediods on my dataset. I wanted to see if I could find distinct clusters
               based on their postive reviews versus their negative reviews. The other file, make_norm_csv.py,
-              was created to normalize the dataset. I had some problems with some of the data values, so I
+              was created to normalize the dataset. I had some problems with data values, so I
               needed to normalize it to make it easier to graph. I took all of the numerical collumns and
               made it so that the value would be from 0 to 1.
             </p>
@@ -74,7 +74,7 @@ const ClusteringPage = () => {
               file with functions that we had to fill out. If the implementations worked, we could
               use testcases.py to test our algorithm. For example, the call 'python testcases.py 01q'
               would call on the first test case, and in README.md it would have an expected result.
-              You could also just run 'python testcases.py' and get a menu and use it that way.
+              You could also just run 'python testcases.py' and get a menu to use in the terminal.
               Colorpalette.py is another fun application that was provided. It creates a
               color palette for an image (jpg or png) based on how many centers you specify (5 by default).
               These centers are the cluster centers. Furthermore, you can redraw the image using the
@@ -118,13 +118,13 @@ const ClusteringPage = () => {
             </p>
             <p className="my-5">
               In the code, we could limit the amount of times the operation should go
-              on, or we could record the previous centers and calculate the new distance between the new centers
-              to see if the change was meaningful. The second option is in place because there is a chance that
-              the centers may not change by a significant amount.
+              on, or we could record the previous centers and calculate the distance from the new centers to the
+              previous to see if the change was meaningful. The second option is in place because there is a 
+              chance that the centers may not change by a significant amount.
             </p>
             <p className="mb-5">
               K-mediods is very similar. The only difference is how the centers are chosen. The centers have
-              to be actual instances rather than an average value that may or may not be an instance. After,
+              to be an actual instance rather than an average/random value that may or may not be an instance. After,
               clusters are formed, new centers are found by checking for an instance that is the closest to
               every other instance. Basically finding the middle/median of a data set rather than an
               average.
@@ -136,19 +136,19 @@ const ClusteringPage = () => {
               Code  
             </h2>
             <p className="mb-5">
-              I this code section, I will only provide my implementation for k-means. There is a lot of code, and
+              In this code section, I will only provide my implementation for k-means. There is a lot of code, and
               it can be found in the repository link above.
             </p>
             <p className="my-5">
               All of the code below is from clustering.py. There are two major functions k-means and k-medioids.
-              Within these functions are helper functions to make the process easier to do. Dist will calculate
+              Within these functions are helper functions to make the process easier. Dist will calculate
               the distance between the center and an instance using the euclidean distance formula. To calculate
               one must measure all columns included. Because a 2D graph is easier to show, most of the test cases
               and my own graph are done with only two columns.
             </p>
             <p className="my-5">
               Mean takes the average of all instances in a cluster to calculate the new center. Calc_threshold
-              takes basically checks how much the previous centers moved. If the movement, is lower than our
+              checks how much the previous centers moved. If the movement, is lower than our
               eps (designated threshold value) then we stop all operations.
             </p>
             <Code
@@ -194,7 +194,7 @@ const ClusteringPage = () => {
             </h2>
             <p className="mb-5">
               The following are results from using K-means/Lloyds algorithm. I ended up with full credit
-              for this assignment and feedback saying that my implementation was find and working. I 
+              for this assignment and feedback saying that my implementation was fine and working. I 
               definitely wouldn't say that it was written well. I'm sure there are more efficient
               ways to write the algorithm.
             </p>
@@ -205,7 +205,7 @@ const ClusteringPage = () => {
               say about the clusters, but its obvious that popular games would have more reviews. At the time,
               the two games that were outliers were PUBG and CSGO. Probably the two biggest games on
               steam at the time or maybe today. By the way, when I say biggest games I don't mean
-              player count. I mean how well known they are. Positive reviews is the x axis. Negative
+              current player count. I mean how well known they are. Positive reviews is the x axis. Negative
               the y.
             </p>
             <figure className='my-5 flex justify-evenly items-center content-center'>
@@ -217,8 +217,8 @@ const ClusteringPage = () => {
             </figure>
             <p className="my-5">
               The next two images are from the testcases.py file. You can try out your own implementation
-              with this file if you know how to set it up. These images are of test case three titled
-              'Three Clusters single step'. This means that we are creating three k's and only going 1
+              with this file if you know how to set it up. These images are for test case three titled
+              'Three Clusters single step'. This means that we are creating three k's and are only going 1
               step (n = 1). Recall from the code section n is 10 if n is not specified. After a single
               step, you can see the second image showing the centers move. Centers are marked with the
               + symbol.

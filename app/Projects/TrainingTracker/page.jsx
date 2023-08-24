@@ -38,8 +38,8 @@ const TrainingTrackerPage = () => {
               Tools Used
             </h2>
             <p className="mb-5">
-              I started this project after my time in college. Before, I never really understood the file structure
-              or how packages worked. Packages were present in my past projects, but for this project 
+              I started this project after my time in college. Before, I never really understood file structure
+              or how packages worked. Packages were rarely present in my past projects, but for this project 
               I started to use a lot more. I will only name a few here that were useful at the time 
               of development.
             </p>
@@ -85,7 +85,7 @@ const TrainingTrackerPage = () => {
             </figure>
             <p className="my-5">
               The gifs above help show what can be done using those packages. They can also be found
-              from the links above in their respective package site.
+              in the links above on their respective package site.
             </p>
             <p className="my-5">
               Compared to Sous Chef (the first mobile app) the backend storage was easier to implement and
@@ -93,7 +93,7 @@ const TrainingTrackerPage = () => {
               used <Linkable 
                 link='https://pub.dev/packages/hive' 
                 text='Hive'
-              />. This package allowed us to have data stored on the local device rather than a database.
+              />. This package allowed us to have data stored on local devices rather than a database.
               We wanted something that didn't deal with an online database, such as Firebase or MongoDB. We wanted
               something simplier and straightforward.
             </p>
@@ -162,7 +162,7 @@ const TrainingTrackerPage = () => {
               />
             </figure>
             <p className="my-5">
-              Transitions from day to workouts page. Then workouts to the add workout page.
+              Transitions from 'day' to 'workout' page. Then 'workout' to the 'add workout' page.
             </p>
             <figure className='my-5 flex xl:flex-row flex-col justify-evenly items-center'>
               <Image

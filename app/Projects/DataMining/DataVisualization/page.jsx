@@ -58,11 +58,11 @@ const DataVisualPage = () => {
               The next two loops helps modify the data to make it easier to graph them. It's been
               a long time since I reviewed the data, so I'm not completely sure why I
               even wrote those loops. However, I think the first loop had to do with how the owner count
-              was formatted. I believe that the numbers had commas so I removed them. The second loop
-              did a calculation to get the percentage of positive reviews from the total amount of reviews.
-              Later when you will see the scatter plot you will see why I did this. It is to show the 
-              density of positive reviews. The plots that are more green will have a higher percentage of
-              postive reviews. More white plots will have more negative reviews.
+              was formatted. I believe that the numbers had commas so I removed them. They were strings and 
+              I needed numbers. The second loop did a calculation to get the percentage of positive reviews 
+              from the total amount of reviews. Later when you will see the scatter plot and it will show 
+              the density of positive reviews. The plots that are more green will have 
+              a higher percentage of postive reviews. More white plots will have more negative reviews.
             </p>
             <Code
               title={'data_vis_1.py'}
@@ -88,7 +88,7 @@ const DataVisualPage = () => {
               the word in the word clouds the more games that have that genre. For the first
               bar graph and word cloud, they deal with games who have comibinations of genres.
               Because the data already provided that, it was pretty easy to get the count and
-              the separate the genres into their categories.
+              separate the genres into their categories.
             </p>
             <Code
               title={'data_vis_2.py'}
@@ -99,7 +99,7 @@ const DataVisualPage = () => {
             <p className="my-5">
               For the second bar graph and word cloud. It was a bit tougher. Now I had to separate all of
               genres into their single genre. Rather than a combination. Many games would be counted again
-              in other genres, but thats okay because techincally they are part of that genre. The first
+              in different genres, but thats okay because techincally they are part of that category. The first
               loop will get all of the genres and split them. We will have a set of genres, so there will
               be no duplicates. The second loop will grab the games with the specific genre and add the
               count to that specific singular category.
@@ -151,11 +151,11 @@ const DataVisualPage = () => {
               reading the API documentation again, the owner count is more of a categorical value
               rather than a continuous value. The owner count is a rough estimate of how many
               owners have the game and puts it within a range. Still, the graph shows that 
-              more ownership a game has the more positive reviews a game can have. However, even if a game
+              more ownership of a game means more positive reviews a game can have. However, even if a game
               had a lot of owners and positive reviews, it doesn't mean its doing well. The color bar
               is for that reason. I wanted to see if the game has more positive reviews versus their
               negative reviews. You can see that some of the bigger games on the top right are not solid
-              green and closer to the middle. They are defintely in the mixed reviews section.
+              green and closer to the middle. This means there are a lot of positive and negative reviews.
             </p>
             <figure className='my-5 flex justify-evenly items-center content-center'>
               <Image
@@ -167,8 +167,8 @@ const DataVisualPage = () => {
             </figure>
             <p className="my-5">
               The next graphs are the bar graphs. The top one is the singular genres on their own. The bottom
-              one contains data on all the combinations. For the singular one, indie had the most games.
-              In the combinations graph, the genre action on its own was the highest.
+              one contains data on all the combinations. For the singular one, 'indie' had the most games.
+              In the combinations graph, the genre 'action' on its own was the highest.
             </p>
             <figure className='my-5 flex justify-evenly items-center content-center'>
               <Image

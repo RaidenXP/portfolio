@@ -55,7 +55,7 @@ const SousChefPage = () => {
               text='Firebase'
             />. It was pretty easy to connect Firebase to Flutter. Just download a few packages 
             and everything should be up and running. The docs on Firebase and many videos online
-            helped configure everything.
+            helped with the configuration.
           </p>
           <figure className='mb-5 flex justify-evenly items-center content-center'>
             <Image
@@ -80,7 +80,7 @@ const SousChefPage = () => {
               As of right now, the App is no longer on the Google Play Store. I did not maintain it,
               and I was inactive for a long time. In addition, the app can only store recipes on the 
               public level. This means anyone can see the recipe that has been recorded. I did not have
-              the chance to implement authenthication/account login. 
+              a chance to implement authenthication/account login. 
             </p>
             <figure className='my-5 flex justify-evenly items-center content-center'>
               <Image
@@ -113,7 +113,7 @@ const SousChefPage = () => {
               Overall, I would say this project is incomplte and only about 20% done. There are a lot of
               improvements that could be done. In addition, organization has to be improved for
               both the database and the source code. I do want to come back to this one day. Next time,
-              I start from the bottom again instead of build on top of this verison.
+              I'll start from the bottom again instead of building on top of this verison.
             </p>
           </div>
         </div>

@@ -28,7 +28,7 @@ const DataMiningPage = () => {
         <div className='max-w-none'>
           <h1 className='break-words text-4xl font-semibold mb-8'>Data Mining Series</h1>
           <p className='text-base my-5'>
-            Data mining is a topic that I have a lot of interest in. Before taking the class at
+            Data mining is a topic that I have interest in. Before taking the class at
             Cal Poly Pomona, I always thought that it was extracting data and using it to get information
             early. For example, finding secret content from a video game file. Well technically, I wasn't
             100% wrong on the extracting part. However, data mining is more about extracting large amounts 
@@ -37,7 +37,7 @@ const DataMiningPage = () => {
           </p>
           <p className="mb-5">
             This project was done during my time in Cal Poly Pomona. It was for my class,
-            and it was a very useful experience. It taught me a lot about python and data mining.
+            and it was a very useful experience. It taught me a lot about python, APIs, and data mining.
           </p>
           <h2 ref={langRef} id="lang" className='border-t border-gray-300 pt-10 mt-12 mb-6 font-semibold 
           text-2xl scroll-mt-[75px]'>
@@ -63,7 +63,7 @@ const DataMiningPage = () => {
             Parts
           </h2>
           <p>
-            For this project, it will be told in a series of five parts. I will take you along my journey when
+            For this project, it will be told in a series of four parts. I will take you along my journey when
             I learned data mining in my Cal Poly Pomona course. Underneath are cards that will allow you 
             to go to any part of the project. The sidebar also allows that. However, I recommend starting
             from the first part Data Extraction then going in order. For most of the series, 
@@ -88,15 +88,9 @@ const DataMiningPage = () => {
             description='Part Three of the Series. Clustering data and using specific algorithms to do so.'
           />
           <SeriesCard 
-            link='/Projects/DataMining/FrequentPatternMining' 
-            title='Frequent Pattern Mining' 
-            description='Part Four of the Series. Frequent Pattern Mining and the algorithms that
-            were used.'
-          />
-          <SeriesCard 
-            link='/Projects/DataMining/Classification' 
-            title='Classification' 
-            description='Part Five of the Series. Focuses on Classification, but I had to use a different dataset.'
+            link='/Projects/DataMining/Other' 
+            title='Other' 
+            description='Part Four of the Series. Section is about Frequent Pattern Mining and Classification.'
           />
         </div>
       </article>

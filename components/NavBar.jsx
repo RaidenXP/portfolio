@@ -71,7 +71,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link
-                href='/Projects/'
+                href='/Projects'
                 className={`block py-2 pl-3 pr-4 rounded md:p-0
                   ${ pathname.includes('/Projects') ? 
                   'text-white bg-violet-700 md:bg-transparent md:text-violet-700' 
@@ -84,7 +84,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link
-                href='/About'
+                href='/WIP'
                 className={`block py-2 pl-3 pr-4 rounded md:p-0
                   ${ pathname === '/About' ? 
                   'text-white bg-violet-700 md:bg-transparent md:text-violet-700' 

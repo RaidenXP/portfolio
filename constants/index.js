@@ -127,12 +127,17 @@ export const projectDataCluster = [
   },
 ]
 
-export const projectDataPattern = [
-
-]
-
-export const projectDataClassification = [
-
+export const projectDataOther = [
+  {
+    title: 'Frequent Pattern Mining',
+    id: '#pattern',
+    inView: false
+  },
+  {
+    title: 'Classification',
+    id: '#class',
+    inView: false
+  },
 ]
 
 export const projectGameAI = [

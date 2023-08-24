@@ -45,7 +45,7 @@ const SpotColWebAppPage = () => {
             </p>
             <p className='my-5'>
               Eventually, we decided to use python flask for our back-end because python was a language that
-              we were most comfortable with. For our front-end choice, we wanted to do something with Java, but
+              we were comfortable with. For our front-end choice, we wanted to do something with Java, but
               I was curious and wanted to try working with Javascript. The language is prominent in the web dev
               industry and it has many libraries for making user interfaces. As a result, we ended up with
               React.
@@ -72,12 +72,12 @@ const SpotColWebAppPage = () => {
               Tools Used
             </h2>
             <p className='mb-5'>
-              Lets start with the ide. Well its not really an ide, but its a very very good tool for editing
+              Lets start with the IDE. Well its not really an IDE, but its a very very good tool for editing
               source code in my 
               opinion: <span className='font-semibold'>
                 Visual Studio Code
               </span>. I first started using this when I transfered into Cal Poly Pomona. My Java teacher showed
-              us this editor, and I was very confused on what I had to do to use this. There were so many plug-ins
+              us this editor, and I was very confused on what I had to do to use it. There were so many plug-ins
               and problems that I faced. However, now its my favorite editor. Before this, I mainly did C++, so I
               used Visual Studio. I thought the two were the same things.
             </p>
@@ -86,11 +86,11 @@ const SpotColWebAppPage = () => {
               We found a library known as <Linkable 
               link='https://flask.palletsprojects.com/en/2.3.x/' 
               text='Python Flask'
-              />. Using flask gave us some sort of API to fetch data. With other python libraries 
+              />. Flask gave us an API to fetch data from. With other python libraries 
               we could communicate with Spotify's API and authenthication tools. This allowed us to let users
               sign in and start making playlists for their accounts. Furthermore, we made calls to our back-end
               to make queries for songs based on artists, title, or genre. Unfortunately, only the top
-              5 songs were retrieved per artist. I'm not about the reason for this because I mainly worked on
+              5 songs were retrieved per artist. I'm not sure about the reason for this because I mainly worked on
               the front-end. I believe it was because we were restricted somehow. Maybe we were missing some
               options in our calls.
             </p>
@@ -111,15 +111,14 @@ const SpotColWebAppPage = () => {
             <p className='my-5'>
               I don't know what it is, but I really enjoy front-end development. I'll admit I'm not very creative,
               but I love seeing a website or mobile app come together. Getting the functionality and layout of
-              the app to work is just so satisfying. For this project, I was heavily influced by Flutter. I'll
-              go over it more in my mobile app projects, but its because a development kit for mobile apps. It
-              contains many pre-built components to build apps. Because I worked on with Flutter before
+              working is just so satisfying. For this project, I was heavily influced by Flutter. I'll
+              go over it more in my mobile app projects. Because I worked with Flutter before
               this project, I wanted something similar. Therefore, instead of using traditional 
               CSS, I found <Linkable 
                 link='https://mui.com/' 
                 text='MUI'
-              />. It is a component library that contains many of the modern designs that companies, such as
-              Spotify, Neflix, and Amazon uses. It was quick and easy to put in components that I needed for the
+              />. It is a component library that contains many modern designs that companies, such as
+              Spotify, Neflix, and Amazon use. It was quick and easy to put in components that I needed for the
               site. By the way, I'm not using MUI for this site though. I really wanted to try CSS and Tailwind.
               It's my first time and it has been pretty fun.
             </p>
@@ -146,7 +145,7 @@ const SpotColWebAppPage = () => {
             <p className='mb-5'>
               After a few of months working together, we had our minimum viable project. Unfortunately
               as of today, the website is not working. We used Heroku to host our site, but it went down for
-              some reason. I think it was because we were inactive for a while. I tried to get it up and running 
+              some reason. I think it is because of our inactivity. I tried to get it up and running 
               on local host, so I can get some photos. However, I ran into an error where the redirect wasn't
               working anymore. Therefore, I only have a few images showing what we made.
             </p>
@@ -159,7 +158,7 @@ const SpotColWebAppPage = () => {
               />
             </figure>
             <p className='my-5'>
-              The image above is the product at its most recent state. In the top corner you can see the image
+              The image above is the product at its most recent state. In the top right corner you can see the image
               icon for the user. It is a clickable button that lets you log in. Then the log out button is
               next to it. To the left, we have a basic side bar for entering other sections of our page. If we
               wanted to search for a song, we would enter the next section Create Playlist.
@@ -178,7 +177,7 @@ const SpotColWebAppPage = () => {
               and genre, but I didn't have any images for that. Lastly, the one beneath is an image
               from early production, but it basically has the same layout as the recent product. It
               displays the top 5 songs from the artist. The only thing that the image is missing is
-              that we also implemented a related section beneath it. The related section displayed
+              an additional implementation of a related section beneath it. The related section displayed
               related artists.
             </p>
             <figure className='mb-5 flex justify-evenly items-center content-center'>
