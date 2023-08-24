@@ -115,13 +115,15 @@ const DataExtractionPage = () => {
                 text={'Github Respository'}
               />. You can also find the same code above here.
             </p>
-            <Image
-              src='/data-mining/results.png'
-              alt="results"
-              width={700}
-              height={700}
-              className="mb-5"
-            />
+            <figure className='flex flex-col mb-5 items-center content-center'>
+              <Image
+                src='/data-mining/results.PNG'
+                alt="results"
+                width={600}
+                height={600}
+                className="mb-5"
+              />
+            </figure>
           </div>
         </div>
       </article>

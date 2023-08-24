@@ -244,17 +244,17 @@ const ClusteringPage = () => {
               image before redrawing. If your k-means algorithm works, then this application should 
               work properly.
             </p>
-            <figure className='my-5 flex flex-col justify-evenly items-center content-center'>
+            <figure className='mb-5 flex xl:flex-row flex-col justify-evenly items-center content-center'>
               <Image
-                src={'/data-mining/bae.PNG'}
-                width={500}
-                height={500}
-                className="mb-3"
+                src={'/data-mining/mona.PNG'}
+                width={300}
+                height={300}
+                className="mb-5 xl:mb-0"
               />
               <Image
-                src={'/data-mining/bae-redraw.PNG'}
-                width={500}
-                height={500}
+                src={'/data-mining/mona-redraw.PNG'}
+                width={300}
+                height={300}
               />
             </figure>
             <figure className='mb-5 flex xl:flex-row flex-col justify-evenly items-center content-center'>
