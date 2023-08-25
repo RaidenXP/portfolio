@@ -122,7 +122,7 @@ const Projects = () => {
               <tr className="border-b border-gray-300">
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
-                    href='/Projects/WIP'
+                    href='/Projects/GameAI'
                     className="text-violet-700"
                   >
                     Game AI Series

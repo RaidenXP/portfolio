@@ -140,8 +140,40 @@ export const projectDataOther = [
   },
 ]
 
-export const projectGameAI = [
+export const projectGameAIMain = [
+  {
+    title: 'Tools Used',
+    id: '#tools',
+    inView: false
+  },
+  {
+    title: 'Parts',
+    id: '#parts',
+    inView: false
+  },
+]
 
+export const projectGameAIPath = [
+  {
+    title: 'Movement',
+    id: '#movement',
+    inView: false
+  },
+  {
+    title: 'NavMesh',
+    id: '#nav',
+    inView: false
+  },
+  {
+    title: 'A* and Breadth First Search',
+    id: '#algo',
+    inView: false
+  },
+  {
+    title: 'Results',
+    id: '#results',
+    inView: false
+  },
 ]
 
 export const projectRay = [
@@ -431,4 +463,10 @@ def lloyds(data, k, columns, centers=None, n=None, eps=None):
       iteration += 1
 
   return centers`
+]
+
+export const partOneGameAI = [
+  `float distLeft = PVector.sub(currentPos, target).mag(); 
+float target_angle = atan2(target.y - currentPos.y, 
+  target.x - currentPos.x);`
 ]

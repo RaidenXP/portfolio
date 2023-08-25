@@ -182,7 +182,7 @@ const ProjectList = ({ setMenu, menuState }) => {
       <ul className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
-            href='/Projects/WIP'
+            href='/Projects/GameAI'
             className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
             py-1 text-left text-sm font-medium
             ${ pathname === '/Projects/GameAI' ? 'text-violet-700 hover:text-black' : 
@@ -198,9 +198,13 @@ const ProjectList = ({ setMenu, menuState }) => {
             <div className="relative">
               <ul className="mb-0 px-0.5 ">
                 <li className="my-1.5">
-                  <Link href='/Projects/WIP' className="flex w-full relative cursor-pointer 
+                  <Link href='/Projects/GameAI/Path' 
+                  className={`flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900"
+                  text-sm hover:text-black text-gray-900
+                  ${ pathname === '/Projects/GameAI/Path' ? 
+                  'text-violet-700 hover:text-black' : 
+                  'hover:text-violet-700'}`}
                   onClick={() => {
                     if(setMenu)
                       setMenu(false)
@@ -210,9 +214,13 @@ const ProjectList = ({ setMenu, menuState }) => {
                   </Link>
                 </li>
                 <li className="my-1.5">
-                  <Link href='/Projects/WIP' className="flex w-full relative cursor-pointer 
+                  <Link href='/Projects/WIP' 
+                  className={`flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900"
+                  text-sm hover:text-black text-gray-900
+                  ${ pathname === '/Projects/GameAI/Hanabi' ? 
+                  'text-violet-700 hover:text-black' : 
+                  'hover:text-violet-700'}`}
                   onClick={() => {
                     if(setMenu)
                       setMenu(false)
@@ -222,9 +230,13 @@ const ProjectList = ({ setMenu, menuState }) => {
                   </Link>
                 </li>
                 <li className="my-1.5">
-                  <Link href='/Projects/WIP' className="flex w-full relative cursor-pointer 
+                  <Link href='/Projects/WIP' 
+                  className={`flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900"
+                  text-sm hover:text-black text-gray-900
+                  ${ pathname === '/Projects/GameAI/PCG' ? 
+                  'text-violet-700 hover:text-black' : 
+                  'hover:text-violet-700'}`}
                   onClick={() => {
                     if(setMenu)
                       setMenu(false)
