@@ -176,6 +176,32 @@ export const projectGameAIPath = [
   },
 ]
 
+export const projectGameAIHanabi = [
+  {
+    title: 'How to Play',
+    id: '#how',
+    inView: false
+  },
+  {
+    title: 'Goal',
+    id: '#goal',
+    inView: false
+  },
+]
+
+export const projectGameAIPCG = [
+  {
+    title: `Prim's Algorithm`,
+    id: '#prim',
+    inView: false
+  },
+  {
+    title: 'Results',
+    id: '#results',
+    inView: false
+  },
+]
+
 export const projectRay = [
 
 ]

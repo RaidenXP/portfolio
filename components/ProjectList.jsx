@@ -214,7 +214,7 @@ const ProjectList = ({ setMenu, menuState }) => {
                   </Link>
                 </li>
                 <li className="my-1.5">
-                  <Link href='/Projects/WIP' 
+                  <Link href='/Projects/GameAI/Hanabi' 
                   className={`flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
                   text-sm hover:text-black text-gray-900
@@ -230,7 +230,7 @@ const ProjectList = ({ setMenu, menuState }) => {
                   </Link>
                 </li>
                 <li className="my-1.5">
-                  <Link href='/Projects/WIP' 
+                  <Link href='/Projects/GameAI/PCG' 
                   className={`flex w-full relative cursor-pointer 
                   items-center justify-between rounded-md pl-2 py-1 text-left
                   text-sm hover:text-black text-gray-900
@@ -242,7 +242,7 @@ const ProjectList = ({ setMenu, menuState }) => {
                       setMenu(false)
                   }}
                   >
-                    Procedural Content Generation: Mazes
+                    PCG: Mazes
                   </Link>
                 </li>
               </ul>

@@ -61,7 +61,7 @@ const GameAIPage = () => {
               used to create images or animations. On their site they describe themselves as a sketchbook.
               The programming language used in this IDE is similar to Java.
             </p>
-            <figure className='mb-5 flex justify-evenly items-center content-center'>
+            <figure className='my-5 flex justify-evenly items-center content-center'>
               <Image
                 src={'/game-ai/processing.png'}
                 width={150}
@@ -69,6 +69,9 @@ const GameAIPage = () => {
                 alt="processing image"
               />
             </figure>
+            <p className="mb-5">
+              The only part that is different from the rest is part two. It only utilizes python.
+            </p>
           </div>
           <div ref={partsRef}>
             <h2 id="parts" className='border-t border-gray-300 pt-10 mt-12 mb-6 font-semibold 
@@ -88,13 +91,13 @@ const GameAIPage = () => {
                 a maze without giving it direct waypoints.'
               />
               <SeriesCard 
-                link='/Projects/WIP' // /Projects/GameAI/Hanabi
+                link='/Projects/GameAI/Hanabi' // /Projects/GameAI/Hanabi
                 title='Hanabi Gameplay' 
                 description='In part two, my partner and I attempted to get an AI to achieve a good score
                 in the card game Hanabi.'
               />
               <SeriesCard 
-                link='/Projects/WIP' // /Projects/GameAI/PCG
+                link='/Projects/GameAI/PCG' // /Projects/GameAI/PCG
                 title='PCG: Mazes' 
                 description='Part three goes into one of my favorite topics: PCG. Here we generate
                 mazes based on certain parameters.'
