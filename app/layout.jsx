@@ -11,6 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/n/n-50.png" />
+      </head>
       <body className="bg-no-repeat bg-fixed bg-gradient-to-br from-slate-50 to-violet-100">
         <NavBar/>
         {children}

@@ -254,7 +254,7 @@ const ProjectList = ({ setMenu, menuState }) => {
       <ul className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
-            href='/Projects/WIP'
+            href='/Projects/RayTracing'
             className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
             py-1 text-left text-sm font-medium
             ${ pathname === '/Projects/RayTracing' ? 'text-violet-700 hover:text-black' : 

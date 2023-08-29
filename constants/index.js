@@ -203,7 +203,31 @@ export const projectGameAIPCG = [
 ]
 
 export const projectRay = [
-
+  {
+    title: 'Primitives',
+    id: '#prim',
+    inView: false
+  },
+  {
+    title: 'Constructive Solid Geometry',
+    id: '#CSG',
+    inView: false
+  },
+  {
+    title: 'Lighting',
+    id: '#light',
+    inView: false
+  },
+  {
+    title: 'Reflections and Refractions',
+    id: '#rr',
+    inView: false
+  },
+  {
+    title: 'Textures',
+    id: '#texture',
+    inView: false
+  },
 ]
 
 export const projectPort = [
@@ -495,4 +519,191 @@ export const partOneGameAI = [
   `float distLeft = PVector.sub(currentPos, target).mag(); 
 float target_angle = atan2(target.y - currentPos.y, 
   target.x - currentPos.x);`
+]
+
+export const rayPrim = [
+  {
+    id: 'test1',
+    url: '/raytracer/prim/test1.png'
+  },
+  {
+    id: 'test4',
+    url: '/raytracer/prim/test4.png'
+  },
+  {
+    id: 'test5',
+    url: '/raytracer/prim/test5.png'
+  },
+  {
+    id: 'test8',
+    url: '/raytracer/prim/test8.png'
+  },
+  {
+    id: 'test9',
+    url: '/raytracer/prim/test9.png'
+  },
+  {
+    id: 'test10',
+    url: '/raytracer/prim/test10.png'
+  },
+  {
+    id: 'test11',
+    url: '/raytracer/prim/test11.png'
+  },
+  {
+    id: 'test12',
+    url: '/raytracer/prim/test12.png'
+  },
+  {
+    id: 'test13',
+    url: '/raytracer/prim/test13.png'
+  },
+  {
+    id: 'test14',
+    url: '/raytracer/prim/test14.png'
+  },
+]
+
+export const rayCSG = [
+  {
+    id: 'test3',
+    url: '/raytracer/CSG/test3.png'
+  },
+  {
+    id: 'test5',
+    url: '/raytracer/CSG/test5.png'
+  },
+  {
+    id: 'test6',
+    url: '/raytracer/CSG/test6.png'
+  },
+  {
+    id: 'test7',
+    url: '/raytracer/CSG/test7.png'
+  },
+  {
+    id: 'test11',
+    url: '/raytracer/CSG/test11.png'
+  },
+  {
+    id: 'test13',
+    url: '/raytracer/CSG/test13.png'
+  },
+  {
+    id: 'test25',
+    url: '/raytracer/CSG/test25.png'
+  },
+  {
+    id: 'test26',
+    url: '/raytracer/CSG/test26.png'
+  },
+  {
+    id: 'test29',
+    url: '/raytracer/CSG/test29.png'
+  },
+]
+
+export const raylight = [
+  {
+    id: 'test1',
+    url: '/raytracer/light/test1.png'
+  },
+  {
+    id: 'test2',
+    url: '/raytracer/light/test2.png'
+  },
+  {
+    id: 'test3',
+    url: '/raytracer/light/test3.png'
+  },
+  {
+    id: 'test4',
+    url: '/raytracer/light/test4.png'
+  },
+  {
+    id: 'test5',
+    url: '/raytracer/light/test5.png'
+  },
+  {
+    id: 'test6',
+    url: '/raytracer/light/test6.png'
+  },
+  {
+    id: 'test7',
+    url: '/raytracer/light/test7.png'
+  },
+  {
+    id: 'test8',
+    url: '/raytracer/light/test8.png'
+  },
+  {
+    id: 'test9',
+    url: '/raytracer/light/test9.png'
+  },
+  {
+    id: 'test13',
+    url: '/raytracer/light/test13.png'
+  },
+  {
+    id: 'test14',
+    url: '/raytracer/light/test14.png'
+  },
+]
+
+export const rayRR = [
+  {
+    id: 'test10',
+    url: '/raytracer/rr/test10.png'
+  },
+  {
+    id: 'test11',
+    url: '/raytracer/rr/test11.png'
+  },
+  {
+    id: 'test12',
+    url: '/raytracer/rr/test12.png'
+  },
+  {
+    id: 'test14',
+    url: '/raytracer/rr/test14.png'
+  },
+  {
+    id: 'test21',
+    url: '/raytracer/rr/test21.png'
+  },
+  {
+    id: 'test23',
+    url: '/raytracer/rr/test23.png'
+  },
+  {
+    id: 'test24',
+    url: '/raytracer/rr/test24.png'
+  },
+]
+
+export const rayText = [
+  {
+    id: 'test3',
+    url: '/raytracer/texture/test3.png'
+  },
+  {
+    id: 'test5',
+    url: '/raytracer/texture/test5.png'
+  },
+  {
+    id: 'test9',
+    url: '/raytracer/texture/test9.png'
+  },
+  {
+    id: 'test11',
+    url: '/raytracer/texture/test11.png'
+  },
+  {
+    id: 'test14',
+    url: '/raytracer/texture/test14.png'
+  },
+  {
+    id: 'test15',
+    url: '/raytracer/texture/test15.png'
+  },
 ]
