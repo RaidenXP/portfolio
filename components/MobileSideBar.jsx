@@ -3,6 +3,8 @@
 import { useState } from "react";
 import ProjectList from "./ProjectList";
 
+import { GoTriangleRight } from 'react-icons/go'
+
 const MobileSideBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -18,10 +20,13 @@ const MobileSideBar = () => {
           className="flex items-center gap-1" type="button"
           onClick={() => setToggleMenu((prev) => !prev)}
         >
+          <GoTriangleRight className={`transition-transform ease-in-out duration-100
+            ${toggleMenu ? 'rotate-90' : ''}
+          `}/>
           <span>Menu</span>
         </button>
         <div
-          className={`${toggleMenu ? 'w-full h-screen block' : 'hidden'}`}
+          className={`${toggleMenu ? 'w-full h-screen' : 'hidden'}`}
         >
           <div className="pb-[1px]">
             <div className='flex items-center p-2 w-full h-[60px]'>

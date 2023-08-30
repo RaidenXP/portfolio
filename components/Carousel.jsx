@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { GoDotFill, GoChevronLeft, GoChevronRight } from 'react-icons/go'
 
@@ -25,26 +25,33 @@ const Carousel = ({ items=[] }) => {
     setCurrentSlide(currentIndex);
   }
 
+  useEffect(() => {
+    const slideInterval = setInterval(nextSlide, 3500);
+    return () => clearInterval(slideInterval)
+  }, [nextSlide])
+
   return (
     <div className="flex flex-col items-center">
       {/**Items*/}
-      <div className="relative group">
-        {items.map((slide, slideIndex) => (
-          <div key={slide.id} className={`duration-700 ease-in-out
-          ${ currentSlide === slideIndex ? ''
-            : 'hidden'
-          }`}>
+      <div className="relative group overflow-hidden w-[75%] rounded-xl">
+        <div 
+          className="flex transition-transform ease-in-out duration-500"
+          style={{
+            transform: `translateX(-${currentSlide * 100}%)`
+          }}
+        >
+          {items.map((slide, slideIndex) => (
             <Image
+              key={slide.id}
               src={slide.url}
               alt={`slide + ${slideIndex}`}
               width={550}
               height={700}
-              className="rounded-xl"
               priority={true}
             />
-          </div>
-        ))}
-
+          ))}
+        </div>
+        
         {/**Arrows*/}
         <button 
           type="button"
@@ -68,6 +75,7 @@ const Carousel = ({ items=[] }) => {
           </div>
         </button>
       </div>
+      
       {/**Sliders*/}
       <div className="text-center space-x-3 mt-3">
         {items.map((slide, slideIndex) => (

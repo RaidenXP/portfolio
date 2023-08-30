@@ -4,7 +4,6 @@ import { projectRay, rayPrim, rayCSG, raylight, rayRR, rayText } from "@/constan
 
 import Carousel from "@/components/Carousel"
 import RightPageNav from "@/components/RightPageNav";
-import Linkable from "@/components/Linkable";
 
 import { useInView } from "react-intersection-observer";
 
@@ -37,7 +36,7 @@ const RayTracingPage = () => {
       min-h-[calc(100vh-103px)] block' 
       >
         <h1 className='break-words text-4xl font-semibold mb-8'>
-          Raytracing Series
+          Raytracer
         </h1>
         <p className='text-base my-5'>
           The Raytracing project was done during my time at Cal Poly Pomona. The professor provided a
