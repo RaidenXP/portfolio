@@ -9,7 +9,7 @@ const Footer = () => {
         py-[36px] md:py-[40px] md:px-[60px] px-4 min-h-[100px]"
       >
         <p className='black text-xl font-bold'>Nathan Tran's Other Links</p>
-        <div className='footer__links'>
+        <div className='flex-1 flex justify-end gap-10'>
             <Link href='https://www.linkedin.com/in/nathan-tran-a6455b164/' target='_blank' rel='noopener noreferrer'>
               <Image 
                 src={'/linkedin-mark/linkedin.svg'}

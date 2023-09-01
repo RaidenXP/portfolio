@@ -65,30 +65,17 @@ const Projects = () => {
               <tr className="border-b border-gray-300">
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
-                    href='/Projects/SpotColWebApp'
+                    href='/Projects/Portfolio'
                     className="text-violet-700"
                   >
-                    Spotify Collab Web App
+                    Portfolio
                   </Link>
                 </td>
                 <td className="pl-2 py-2 pr-[0px]">
-                  My first project in the world of web development. I worked with three others, and we split
-                  the team into a front-end and back-end group. I worked on the front-end for this project.
-                </td>
-              </tr>
-              <tr className="border-b border-gray-300">
-                <td className="pl-[0px] py-2 pr-2">
-                  <Link
-                    href='/Projects/SousChef'
-                    className="text-violet-700"
-                  >
-                    Sous Chef
-                  </Link>
-                </td>
-                <td className="pl-2 py-2 pr-[0px]">
-                  My first mobile app project. I did this one solo using Flutter. An open-source UI
-                  software development kit created by Google. The goal was to create an app 
-                  to help store cooking recipes.
+                  Another of the few web development projects I have done. This is officially my second one;
+                  however, I have done other web page projects, but they were done following tutorials.
+                  For this project, I've been utilizing parts and pieces of what I've learned to create something
+                  of my own.
                 </td>
               </tr>
               <tr className="border-b border-gray-300">
@@ -108,15 +95,16 @@ const Projects = () => {
               <tr className="border-b border-gray-300">
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
-                    href='/Projects/DataMining'
+                    href='/Projects/RayTracing'
                     className="text-violet-700"
                   >
-                    Data Mining Series
+                    Raytracer
                   </Link>
                 </td>
                 <td className="pl-2 py-2 pr-[0px]">
-                  Four-part series on special topics for Data Mining. These are python scripts that I've wrote
-                  for one of my classes to extract data from Steam and analyze the results.
+                  I will be going over the different components of a raytracer that a partner and I have built
+                  for a class project. The Raytracer does basic operations, such as displaying primitive shapes,
+                  light manipulation, and transformations.
                 </td>
               </tr>
               <tr className="border-b border-gray-300">
@@ -136,32 +124,44 @@ const Projects = () => {
               <tr className="border-b border-gray-300">
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
-                    href='/Projects/RayTracing'
+                    href='/Projects/DataMining'
                     className="text-violet-700"
                   >
-                    Raytracer
+                    Data Mining Series
                   </Link>
                 </td>
                 <td className="pl-2 py-2 pr-[0px]">
-                  I will be going over the different components of a raytracer that a partner and I have built
-                  for a class project. The Raytracer does basic operations, such as displaying primitive shapes,
-                  light manipulation, and transformations.
+                  Four-part series on special topics for Data Mining. These are python scripts that I've wrote
+                  for one of my classes to extract data from Steam and analyze the results.
+                </td>
+              </tr>
+              <tr className="border-b border-gray-300">
+                <td className="pl-[0px] py-2 pr-2">
+                  <Link
+                    href='/Projects/SpotColWebApp'
+                    className="text-violet-700"
+                  >
+                    Spotify Collab Web App
+                  </Link>
+                </td>
+                <td className="pl-2 py-2 pr-[0px]">
+                  My first project in the world of web development. I worked with three others, and we split
+                  the team into a front-end and back-end group. I worked on the front-end for this project.
                 </td>
               </tr>
               <tr>
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
-                    href='/Projects/WIP'
+                    href='/Projects/SousChef'
                     className="text-violet-700"
                   >
-                    Portfolio
+                    Sous Chef
                   </Link>
                 </td>
                 <td className="pl-2 py-2 pr-[0px]">
-                  Another of the few web development projects I have done. This is officially my second one;
-                  however, I have done other web page projects, but they were done following tutorials.
-                  For this project, I've been utilizing parts and pieces of what I've learned to create something
-                  of my own.
+                  My first mobile app project. I did this one solo using Flutter. An open-source UI
+                  software development kit created by Google. The goal was to create an app 
+                  to help store cooking recipes.
                 </td>
               </tr>
             </tbody>

@@ -26,7 +26,7 @@ const Carousel = ({ items=[] }) => {
   }
 
   useEffect(() => {
-    const slideInterval = setInterval(nextSlide, 3500);
+    const slideInterval = setInterval(nextSlide, 4500);
     return () => clearInterval(slideInterval)
   }, [nextSlide])
 
@@ -35,7 +35,7 @@ const Carousel = ({ items=[] }) => {
       {/**Items*/}
       <div className="relative group overflow-hidden w-[75%] rounded-xl">
         <div 
-          className="flex transition-transform ease-in-out duration-500"
+          className="flex transition-transform ease-in-out duration-300"
           style={{
             transform: `translateX(-${currentSlide * 100}%)`
           }}

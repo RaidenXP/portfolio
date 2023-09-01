@@ -231,7 +231,16 @@ export const projectRay = [
 ]
 
 export const projectPort = [
-
+  {
+    title: 'Tools Used',
+    id: '#tools',
+    inView: false
+  },
+  {
+    title: 'Plans for the Future',
+    id: '#plans',
+    inView: false
+  },
 ]
 
 export const partOneDataMine = [
