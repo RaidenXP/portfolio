@@ -11,9 +11,9 @@ const NavBar = () => {
 
   return (
     <nav 
-      className={`sticky top-0 w-full z-20 backdrop-blur-[4px] bg-gradient-to-br from-inherit`}
+      className={`sticky top-0 w-full z-50 backdrop-blur-[4px] bg-gradient-to-br from-inherit`}
     >
-      <div className='max-w-[1400px] flex flex-wrap md:flex-nowrap md:h-[70px] 
+      <div className='max-w-[1400px] flex flex-wrap md:flex-nowrap md:h-[70px]
       items-center justify-between mx-auto p-4'>
         <Link 
           href='/'

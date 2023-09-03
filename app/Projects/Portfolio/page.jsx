@@ -56,6 +56,20 @@ const PortfolioDescription = () => {
               Therefore, I thought it would be a great idea to use NextJS because it was on the rise and
               TailwindCSS because I wanted some CSS experience under my belt.
             </p>
+            <figure ref={toolsRef} className='my-5 flex justify-evenly items-center content-center'>
+              <Image
+                src={'/port/Nextjs-logo.png'}
+                alt='nextjs'
+                width={150}
+                height={150}
+              />
+              <Image
+                src={'/port/tailwind-1.png'}
+                alt='tailwindcss'
+                width={150}
+                height={150}
+              />
+            </figure>
             <p className="my-5">
               Because it was my first time using TailwindCSS or CSS in general, sites such as <Linkable
                 link={'https://tailwindcomponents.com/cheatsheet/'}
