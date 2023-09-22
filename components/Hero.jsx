@@ -135,7 +135,7 @@ const Hero = () => {
             Cal Poly helped me learn a lot about Computer Science, but I am specifically interested
             in Software Engineering and App Development.
           </p>
-          <Link href="/WIP" 
+          <Link href="/About" 
             className="text-indigo-600 hover:underline font-medium text-lg inline-flex items-center"
           >
             Read more

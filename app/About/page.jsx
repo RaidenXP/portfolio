@@ -1,9 +1,15 @@
-import React from 'react'
+import AboutFirstSection from "@/components/AboutFirstSection"
+import AboutSecondSection from "@/components/AboutSecondSection"
+import AboutThirdSection from "@/components/AboutThirdSection"
+import AboutFourthSection from "@/components/AboutFourthSection"
 
 const About = () => {
   return (
-    <div className='max-w-screen-xl mx-auto p-4'>
-      About
+    <div>
+      <AboutFirstSection/>
+      <AboutSecondSection/>
+      <AboutThirdSection/>
+      <AboutFourthSection/>
     </div>
   )
 }

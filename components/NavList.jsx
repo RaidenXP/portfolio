@@ -4,16 +4,45 @@ import Link from 'next/link';
 
 import { usePathname } from 'next/navigation';
 
+import { motion } from 'framer-motion';
+
+const ulVariants = {
+  open: {
+    transition: { staggerChildren: 0.1, delayChildren: 0.25 }
+  },
+  closed: {
+    transition: { staggerChildren: 0.05, staggerDirection: -1 }
+  }
+};
+
+const liVariants = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 }
+    }
+  },
+  closed: {
+    y: '-15%',
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 }
+    }
+  }
+};
+
 const NavList = ({ setHam, hamState }) => {
   const pathname = usePathname();
 
   return (
-    <ul 
+    <motion.ul 
       className='font-medium flex flex-col p-4 md:p-0 mt-4 border 
       border-violet-100 rounded-lg bg-violet-100 md:flex-row 
       md:space-x-8 md:mt-0 md:border-0 shadow-xl md:bg-transparent md:shadow-none'
+      variants={ulVariants}
     >
-      <li>
+      <motion.li variants={liVariants}>
         <Link
           href='/'
           className={`block py-2 pl-3 pr-4 rounded md:p-0
@@ -28,8 +57,8 @@ const NavList = ({ setHam, hamState }) => {
         >
           Home
         </Link>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li variants={liVariants}>
         <Link
           href='/Projects'
           className={`block py-2 pl-3 pr-4 rounded md:p-0
@@ -44,10 +73,10 @@ const NavList = ({ setHam, hamState }) => {
         >
           Projects
         </Link>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li variants={liVariants}>
         <Link
-          href='/WIP'
+          href='/About'
           className={`block py-2 pl-3 pr-4 rounded md:p-0
             ${ pathname === '/About' ? 
             'text-white bg-violet-700 md:bg-transparent md:text-violet-700' 
@@ -60,8 +89,8 @@ const NavList = ({ setHam, hamState }) => {
         >
           About
         </Link>
-      </li>
-    </ul>
+      </motion.li>
+    </motion.ul>
   )
 }
 

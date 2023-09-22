@@ -4,12 +4,23 @@ import Link from "next/link"
 
 import { usePathname } from 'next/navigation';
 
+import { motion } from "framer-motion";
+
+const itemVariants = {
+  open: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 300, damping: 24 }
+  },
+  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } }
+};
+
 const ProjectList = ({ setMenu, menuState }) => {
   const pathname = usePathname();
 
   return (
     <>
-      <ul className="block ms-0 me-0 m-0 p-0 list-none">
+      <motion.ul variants={itemVariants} className="block ms-0 me-0 m-0 p-0 list-none">
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects'
@@ -24,8 +35,8 @@ const ProjectList = ({ setMenu, menuState }) => {
             Welcome!
           </Link>
         </li>
-      </ul>
-      <ul className="block ms-0 me-0 m-0 p-0">
+      </motion.ul>
+      <motion.ul variants={itemVariants} className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects/Portfolio'
@@ -46,8 +57,8 @@ const ProjectList = ({ setMenu, menuState }) => {
             </div>
           </div>
         </li>
-      </ul>
-      <ul className="block ms-0 me-0 m-0 p-0">
+      </motion.ul>
+      <motion.ul variants={itemVariants} className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects/TrainingTracker'
@@ -68,8 +79,8 @@ const ProjectList = ({ setMenu, menuState }) => {
             </div>
           </div>
         </li>
-      </ul>
-      <ul className="block ms-0 me-0 m-0 p-0">
+      </motion.ul>
+      <motion.ul variants={itemVariants} className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects/RayTracing'
@@ -90,8 +101,8 @@ const ProjectList = ({ setMenu, menuState }) => {
             </div>
           </div>
         </li>
-      </ul>
-      <ul className="block ms-0 me-0 m-0 p-0">
+      </motion.ul>
+      <motion.ul variants={itemVariants} className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects/GameAI'
@@ -161,8 +172,8 @@ const ProjectList = ({ setMenu, menuState }) => {
             </div>
           </div>
         </li>
-      </ul>
-      <ul className="block ms-0 me-0 m-0 p-0">
+      </motion.ul>
+      <motion.ul variants={itemVariants} className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects/DataMining'
@@ -248,8 +259,8 @@ const ProjectList = ({ setMenu, menuState }) => {
             </div>
           </div>
         </li>
-      </ul>
-      <ul className="block ms-0 me-0 m-0 p-0">
+      </motion.ul>
+      <motion.ul variants={itemVariants} className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects/SpotColWebApp'
@@ -270,8 +281,8 @@ const ProjectList = ({ setMenu, menuState }) => {
             </div>
           </div>
         </li>
-      </ul>
-      <ul className="block ms-0 me-0 m-0 p-0">
+      </motion.ul>
+      <motion.ul variants={itemVariants} className="block ms-0 me-0 m-0 p-0">
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects/SousChef'
@@ -292,7 +303,7 @@ const ProjectList = ({ setMenu, menuState }) => {
             </div>
           </div>
         </li>
-      </ul>
+      </motion.ul>
     </>
   )
 }
