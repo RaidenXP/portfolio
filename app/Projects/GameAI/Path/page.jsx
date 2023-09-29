@@ -31,9 +31,7 @@ const PathPage = () => {
 
   return (
     <>
-      <article className='w-full min-w-0 max-w-6xl mt-4 px-1 md:px-6 
-      min-h-[calc(100vh-103px)] block' 
-      >
+      <article className='project_article'>
         <div className='max-w-none'>
           <h1 className='break-words text-4xl font-semibold mb-8'>
             Path Finding
@@ -46,9 +44,8 @@ const PathPage = () => {
           </p>
           <p className="my-5">
             Path finding requires movement and a way to navigate the map. For the entity in our program,
-            we call it Boid. We had to give Boid movement and a way to learn how to navigate a map. As
-            you'll see later, a NavMesh and utilization of specific algorithms will help Boid navigate
-            a map.
+            we called it Boid. We had to give Boid movement and a way to learn how to navigate a map. As
+            you'll see later, a NavMesh and utilization of specific algorithms will help Boid navigate.
           </p>
           <p className="mb-5">
             To follow along, this <Linkable
@@ -62,7 +59,7 @@ const PathPage = () => {
               Movement
             </h2>
             <p className="mb-5">
-              For Boid's movment, the kinematics and the physics were already implemented by the professor.
+              For Boid's movment, the kinematics and physics were already implemented by the professor.
               All we had to do was figure out how Boid should turn towards the destination, speed up to head
               towards the destination, and slow down when it gets near the destination.
             </p>
@@ -101,9 +98,9 @@ const PathPage = () => {
               />
             </figure>
             <p className="my-5">
-              Next for the movement section was implementing waypoints. This was pretty simple.
-              Just create a list of destinations, and once the destination is reached remove
-              it from the list. 
+              After we got basic movement down, implementing waypoints became the next objective. 
+              This was pretty simple. Just create a list of destinations when we right click, 
+              and once the destination is reached remove it from the list. 
             </p>
             <p className="my-5">
               Next, you must also make it so that it does not slow down at every
@@ -137,8 +134,8 @@ const PathPage = () => {
               NavMesh
             </h2>
             <p className="mb-5">
-              Now that Boid can move by us clicking the destination or following a list of waypoints, 
-              how does it go to a destination without running into walls or without our help? The solution
+              Now that Boid can move from us marking the destination or manually inputting a list of waypoints, 
+              how does it go to a destination without running into walls and without our help? The solution
               is by creating a NavMesh. This was the hardest part of the project. Conceptually, it was
               straightforward, but coding it was difficult.
             </p>
@@ -165,7 +162,7 @@ const PathPage = () => {
             <p className="my-5">
               The first step towards creating a convex shape is by finding the reflex vertices. A reflex vertex 
               is where two lines form an angle greater than 90 degress. Fortunately,
-              we have a lot of information about the walls of the map. The walls are a class that has certain
+              we have a lot of information about the walls in the map. The walls are a class that has certain
               properties. Two important properties that we will need are their normal directions and directions.
               As we traverse the list, we will need the normal direction of the current wall and the direction of
               the next wall. Then we take their dot products.
@@ -174,8 +171,8 @@ const PathPage = () => {
               In our case, the normal direction points away from the interior of the map.
               Therefore, if the normal direction is pointing in the same direction as the next walls
               direction, there is a reflex angle. The image below should help clarify. Reflex angles
-              are in red and directions are in yellow. The normal vector is pointing away from the
-              interior in green.
+              are in red and directions are in yellow. The normal vector, in green, is pointing away from the
+              interior.
             </p>
             <figure className='my-5 flex justify-evenly items-center content-center'>
               <Image
@@ -211,7 +208,7 @@ const PathPage = () => {
               are convex. None have angles greater than 90. Also, notice that there are dots in the center.
               Those will act as waypoints. However, we don't want to move from center to center. We will move
               from the shared edge of two polygons to another shared edge of two polygons. 
-              Video below should clarify. The pink line will be similar to how the AI travels.
+              The video below should clarify. The pink line will be similar to how the AI travels.
             </p>
             <figure className='mb-5 flex justify-evenly items-center content-center'>
               <video 

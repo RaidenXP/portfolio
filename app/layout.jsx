@@ -2,6 +2,17 @@ import '/styles/globals.css'
 
 import NavBar from "@/components/NavBar"
 import Footer from "@/components/Footer"
+import {Source_Code_Pro, Outfit} from 'next/font/google'
+
+const scp = Source_Code_Pro({
+  subsets: ['latin'],
+  variable: '--font-scp'
+})
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  variable: '--font-outfit'
+})
 
 export const metadata = {
   title: 'Nathan\'s Portfolio',
@@ -10,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html className={`${scp.variable} ${outfit.variable}`} lang="en">
       <head>
         <link rel="icon" href="/n/n-50.png" />
       </head>

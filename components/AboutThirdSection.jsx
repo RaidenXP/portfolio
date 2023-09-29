@@ -35,7 +35,7 @@ const AboutThirdSection = () => {
       >
         <motion.h1
           variants={contents}  
-          className="text-[20vw] lg:mr-52 mb-10 font-semibold"
+          className="text-[20vw] lg:mr-52 mb-10 font-semibold text-white"
         >
             Goals
         </motion.h1>

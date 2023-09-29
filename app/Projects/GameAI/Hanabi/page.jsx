@@ -22,9 +22,7 @@ const HanabiPage = () => {
 
   return (
     <>
-      <article className='w-full min-w-0 max-w-6xl mt-4 px-1 md:px-6 
-      min-h-[calc(100vh-103px)] block' 
-      >
+      <article className='project_article'>
         <div className='max-w-none'>
           <h1 className='break-words text-4xl font-semibold mb-8'>
             Hanabi Gameplay
@@ -54,36 +52,37 @@ const HanabiPage = () => {
             <p className="mb-5">
               Hanabi has very good tutorial videos, and it is a simple game to play. There are five card colors
               and five values in the game.  1 to 5 for the values on the cards, and yellow, red, green, white, and
-              blue for the colors. Each color has 5 cards increasing from 1 to 5. There are duplicates for some of 
-              the cards. There are three 1's, two 2's, 3's, and 4's, and one 5 in each color. 
+              blue for the colors. Each color has 5 cards increasing from 1 to 5. There are duplicates for the value 
+              cards. There are three 1's, two 2's, two 3's, two 4's, and one 5 for each color. 
             </p>
             <p className="my-5">
               Shuffle the deck and hand out cards based on how many players there are. Now, this is the important
               part. Make sure the card in a players hand is facing away from the player. Sort of like Heads Up where
-              you can't see what you are and have to have others help you figure it out. Other players will see
-              your cards and will have to help you decide which card is best to place. 
+              you can't see what. Other players will see your cards and will have to help you decide which card is 
+              best to play. 
             </p>
             <p className="my-5">
               The team can only give 8 hints and 3 strikes before the game is over. During a players turn,
               they can play a card, discard a card, or give a hint. Playing a card simply places the card
               onto the board. However, a player must place the card in order. For example, if the board
-              is empty. All colors need a one. You cannot place anything above a one. Otherwise, that would
-              result in a strike. Once a one is placed then the color will need a two and so on.
+              is empty. All colors need a one to start its pile. You cannot place anything above a one. 
+              Otherwise, that would result in a strike. Once a one is placed then the color will need a 
+              two and so on.
             </p>
             <p className="my-5">
-              A player can discard a card and earn a hint token. Remember there are only 8 in the game, and 
-              you can't get a hint over 8. Also, remember that there are certain amounts of a certain card.
-              Discarding a 5 would be very unfortunate because there is only one. Last, is giving a hint.
-              Hints can only be given in this manner. You can only give a hint about a color or a number.
-              Never both. Also, you must point to those corresponding cards. 
+              A player can discard a card and earn back hint tokens that have been used. Remember there are 
+              only 8 in the game. Also, remember that there are certain 
+              amounts of a certain card. Discarding a 5 would be very unfortunate because there is only one. 
+              Last, is giving a hint. Hints can only be given in this manner. You can only give a hint about a 
+              color or a number. Never both. Also, you must point to those corresponding cards. 
               For example, "this card is blue" or "this card is a one" then point. Furthermore, you must
               point out all the cards that relate to that hint. For instance, if you say "this card is blue",
               but the player has more than one blue card, you must say "these cards are blue" and point 
               at all of them. Same goes for the numbers. You cannot leave any cards out.
             </p>
             <p className="mb-5">
-              Once the game runs out of cards tally up the score by counting the number on top of each color
-              deck. Meaning don't add up the pile just count the top card of each deck, so if you get to 5
+              Once the game runs out of cards tally up the score by counting the number on top of each colors
+              pile. Meaning don't add up the pile just count the top card of each deck, so if you get to 5
               for all colors the highest score would be 25 (5 colors 5 numbers). If you reach three strikes
               at any time, the game is over and you don't get a score. At least, I don't think you do.
             </p>
@@ -114,8 +113,8 @@ const HanabiPage = () => {
               Once the bot gave better hints and discards the score went up to 14 and we completed the project.
               However, if the bot could get a higher score we could get extra credit points. Therefore, I tried
               to find ways to make the bot play better. One method that I implemented was making the bot play
-              aggresively. Before, the bot was too scared to get strikes. Therefore, I made is so that the bot
-              will try to play cards and maybe get lucky based on a high probability that the card in their
+              aggresively. Before, the bot was too scared to get strikes. Therefore, I made it so that the bot
+              would try to play cards and maybe get lucky based on a high probability that the card in their
               hand is playable. Unfortunately, it only increased the score by a little.
             </p>
          </div>

@@ -5,9 +5,7 @@ const Hero = () => {
   return (
     <section>
       <div 
-        className="
-        py-8 px-4 mx-auto max-w-screen-xl lg:py-16
-        grid grid-rows-12 lg:gap-8 xl:gap-0 lg:grid-cols-12"
+        className="hero_main"
       >
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <Image
@@ -59,7 +57,7 @@ const Hero = () => {
           className="bg-violet-50 border border-violet-200 rounded-lg p-8 md:p-12 shadow-lg"
         >
           <div 
-            className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 
+            className="bg-purple-100 text-purple-800 font-scp text-xs font-medium inline-flex items-center px-2.5 
             py-0.5 rounded-md mb-2"
           >
               <svg 
@@ -85,10 +83,10 @@ const Hero = () => {
             A list of Projects
           </h2>
           <p 
-            className="text-lg font-normal text-gray-500 mb-4"
+            className="text-lg font-normal font-scp text-gray-500 mb-4"
           >
             I've worked on many solo and group projects. Each provided a lot of learning opportunities.
-            On this page I will go over my favorite and interesting projects that I have been a part
+            In the following page I will go over my favorite and interesting projects that I have been a part
             of.
           </p>
           <Link 
@@ -116,7 +114,7 @@ const Hero = () => {
 
         <div className="bg-violet-50 border border-violet-200 rounded-lg p-8 md:p-12 shadow-lg">
           <div className="bg-indigo-100 text-indigo-800 text-xs 
-            font-medium inline-flex items-center px-2.5 py-0.5 rounded-md mb-2"
+            font-medium inline-flex items-center px-2.5 py-0.5 rounded-md mb-2 font-scp"
           >
               <Image
                 src={'/about-mark/about-24.svg'}
@@ -130,7 +128,7 @@ const Hero = () => {
           <h2 className="text-gray-900 text-3xl font-extrabold mb-2">
             Recent Graduate actively looking for jobs
           </h2>
-          <p className="text-lg font-normal text-gray-500 mb-4">
+          <p className="font-scp text-small font-normal text-gray-500 mb-4">
             I attended California State Polytechnic University, Pomona and studied Computer Science.
             Cal Poly helped me learn a lot about Computer Science, but I am specifically interested
             in Software Engineering and App Development.

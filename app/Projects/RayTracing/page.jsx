@@ -32,9 +32,7 @@ const RayTracingPage = () => {
 
   return (
     <>
-      <article className='w-full min-w-0 max-w-6xl mt-4 px-1 md:px-6 
-      min-h-[calc(100vh-103px)] block' 
-      >
+      <article className='project_article'>
         <h1 className='break-words text-4xl font-semibold mb-8'>
           Raytracer
         </h1>
@@ -58,9 +56,10 @@ const RayTracingPage = () => {
           </h2>
           <p className="mb-5">
             For the first step of this project, we needed to make three shapes. Spheres,
-            planes, and triangles. The first four images in the carousel shows them. The rest,
+            planes, and triangles. The first four images in the carousel show them. The rest,
             such as cylinders and cones, are extra credit. The main pattern to display the images
-            was to calculate where the ray first hits the object and when it exits.
+            was to calculate where the ray first hits the object and when it exits. There are
+            formulas for each shape, to determine where is starts and ends.
           </p>
           <div className="mb-5">
             <Carousel items={rayPrim}/>
@@ -73,16 +72,18 @@ const RayTracingPage = () => {
           </h2>
           <p className="mb-5">
             After we finished creating our shapes, we worked on Constructive Solid Geometry, or
-            CSG. This is when we take two shapes and perform a union, intersection, difference, or
-            a combination of the choices. If we calculated when the ray enters and exits correctly,
-            knowing when the ray is in which shape was next. The reason why we would want to
-            know where the ray is, is to show whether we include that pixel or not.
+            CSG. Its when we take two shapes and perform a union, intersection, difference, or
+            a combination of the choices. After calculating how rays enter and exit shapes,
+            we needed to observe the rays behavior based on what CSG operation we wanted. 
+            For example, if we did a union of two shapes, we need to now when the ray enters
+            the first object and exits the second one. We don't need to know when it exits the first
+            one and enters the second one because we want to include both shapes.
           </p>
           <p className="my-5">
-            This part of the project was pretty difficult. We ran into some problem during this part and
-            after. When we were working on other parts we came back and realized that we had some parts
-            incorrect. Therefore, we had to fix our earlier implementation. Overall, we can make some
-            cool shapes with CSG.
+            This part of the project was pretty difficult. We ran into some problems during this part that
+            affected other parts of the project. Therefore, we had to fix our earlier implementation. 
+            In the end, everything turned out fine, and we can make some cool shapes with our current
+            CSG implementation.
           </p>
           <div className="mb-5">
             <Carousel items={rayCSG}/>
@@ -130,7 +131,7 @@ const RayTracingPage = () => {
             <Carousel items={rayRR}/>
           </div>
           <p className="my-5">
-            The next figures are videos created by many frames. It shows our refraction at work.
+            The next figures are videos created using many frames. It shows our refraction at work.
           </p>
           <figure className='my-5 flex justify-evenly items-center content-center'>
             <video 
@@ -166,15 +167,15 @@ const RayTracingPage = () => {
             The final part was adding textures to our images. This part became tricky
             because of our CSG. As I mentioned earlier, we had to come back to our CSG
             so that some of the images here would work. Image five with Earth and it's
-            reflections was bugged in our end. However, we found a way to get it to work.
+            reflections was bugged on our end. However, we found a way to get it to work.
             Image four of the chair is probably my favorite one. It is actually made up
-            of a bunch of triangles. In addition, it took a while to render.
+            of a bunch of triangles, and it took a while to render.
           </p>
           <div className="my-5">
             <Carousel items={rayText}/>
           </div>
           <p className="my-5">
-            One of our final animations displaying refraction and textures.
+            One of our final animation displaying refraction and textures.
           </p>
           <figure className='mb-5 flex justify-evenly items-center content-center'>
             <video 

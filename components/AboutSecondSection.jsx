@@ -83,7 +83,7 @@ const AboutSecondSection = () => {
               <p className="mb-5">
                 For my first two years in college, I studied at the Coast Community Colleges.
                 I took classes from all three sister schools. Most of my GE's were done
-                there, and my first programming language was C++. Eventually, I transfered to Cal Poly
+                there, and my first programming language is C++. Eventually, I transfered to Cal Poly
                 Pomona. The school's main language is Java, but there were many courses
                 that used other languages too. Some important courses that I took include:
                 Software Engineering, Data Structures, and Algorithms.

@@ -29,9 +29,7 @@ const Projects = () => {
 
   return (
     <>
-      <article className='w-full min-w-0 max-w-6xl mt-4 px-1 md:px-6 
-      min-h-[calc(100vh-103px)] block' 
-      >
+      <article className='project_article'>
         <div className='max-w-none'>
           <h1 className='break-words text-4xl font-semibold mb-8'>Intro</h1>
           <p className='text-base my-5'>Welcome to the project box!</p>
@@ -40,7 +38,7 @@ const Projects = () => {
             What's the Project Box?
           </h2>
           <p className='mb-5'>
-            The project box is where you will get to experience the projects that I have worked on.
+            The project box is where you will get to experience projects that I have worked on.
             I will go over my thought process for each of them and the steps towards creating them.
             These projects are only a few of the ones that I have worked on, but they are the ones
             that are important to me. I've learned the most from these projects, and I enjoyed working
@@ -73,8 +71,8 @@ const Projects = () => {
                 </td>
                 <td className="pl-2 py-2 pr-[0px]">
                   Another of the few web development projects I have done. This is officially my second one;
-                  however, I have done other web page projects, but they were done following tutorials.
-                  For this project, I've been utilizing parts and pieces of what I've learned to create something
+                  however, I have done other web page projects. They were done following tutorials.
+                  For this project, I utilized parts and pieces of what I've learned to create something
                   of my own.
                 </td>
               </tr>
@@ -117,7 +115,7 @@ const Projects = () => {
                   </Link>
                 </td>
                 <td className="pl-2 py-2 pr-[0px]">
-                  Three part series on special topics for Game AI. Another series of class projects to help
+                  Three part series on special topics for Game AI. A series of class projects to help
                   understand real world AI methods used in Video games
                 </td>
               </tr>
@@ -145,7 +143,7 @@ const Projects = () => {
                   </Link>
                 </td>
                 <td className="pl-2 py-2 pr-[0px]">
-                  My first project in the world of web development. I worked with three others, and we split
+                  My first web development project. I worked with three others, and we split
                   the team into a front-end and back-end group. I worked on the front-end for this project.
                 </td>
               </tr>
@@ -159,7 +157,7 @@ const Projects = () => {
                   </Link>
                 </td>
                 <td className="pl-2 py-2 pr-[0px]">
-                  My first mobile app project. I did this one solo using Flutter. An open-source UI
+                  My first mobile app project. I did this solo using Flutter. An open-source UI
                   software development kit created by Google. The goal was to create an app 
                   to help store cooking recipes.
                 </td>
@@ -173,7 +171,7 @@ const Projects = () => {
           <p className='mb-5'>
             To navigate around the project box, I've created a sidebar that lists all of the projects from
             the table of contents. If you are on mobile, you can find this side bar by clicking
-            'Menu' found on top of your screen under the logo and navigation button. In addition, the 
+            'Menu' found on the top of your screen under the logo and navigation button. In addition, the 
             table of contents above has clickable links to help go straight to whatever project you would 
             like to see first.
           </p>

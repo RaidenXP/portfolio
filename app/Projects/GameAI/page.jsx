@@ -23,18 +23,16 @@ const GameAIPage = () => {
 
   return (
     <>
-      <article className='w-full min-w-0 max-w-6xl mt-4 px-1 md:px-6 
-      min-h-[calc(100vh-103px)] block' 
-      >
+      <article className='project_article'>
         <div className='max-w-none'>
           <h1 className='break-words text-4xl font-semibold mb-8'>
             Game AI Series
           </h1>
           <p className='text-base my-5'>
-            Video games are very important to me. They are one of the reasons I chose
+            Video games are very important to me. They are one of the reasons why I chose
             Computer Science as a major. Artificial Intelligence is on the rise and is
-            getting better by the year. This section is another project that I went
-            through during my time in Cal Poly Pomona.
+            getting better by the year. Futhermore, it is another subject that interests me. 
+            This section is another project that I went through during my time in Cal Poly Pomona.
           </p>
           <p className="my-5">
             I worked with one other. I didn't know my partner and we never met in class. 

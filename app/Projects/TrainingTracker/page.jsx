@@ -21,16 +21,14 @@ const TrainingTrackerPage = () => {
 
   return (
     <>
-      <article className='w-full min-w-0 max-w-6xl mt-4 px-1 md:px-6 
-      min-h-[calc(100vh-103px)] block' 
-      >
+      <article className='project_article'>
         <div className='max-w-none'>
           <h1 className='break-words text-4xl font-semibold mb-8'>Training Tracker</h1>
           <p className='text-base my-5'>
             This is my second offical app. I am working with another person. They provided the idea for creating
             a mobile app to track workout days and their specific workouts. Then we worked together to figure
-            out how we should implement it. The app utilizes similar tools as the first mobile app, but it is
-            definitely more functional.
+            out how we should implement it. The app utilizes similar tools as my first mobile app (Sous Chef), 
+            but this is definitely more functional.
           </p>
           <div ref={toolsRef}>
             <h2 id="tools" className='border-t border-gray-300 pt-10 mt-12 mb-6 
@@ -38,7 +36,7 @@ const TrainingTrackerPage = () => {
               Tools Used
             </h2>
             <p className="mb-5">
-              I started this project after my time in college. Before, I never really understood file structure
+              I started this project after college. Before, I never really understood file structure
               or how packages worked. Packages were rarely present in my past projects, but for this project 
               I started to use a lot more. I will only name a few here that were useful at the time 
               of development.
@@ -106,7 +104,7 @@ const TrainingTrackerPage = () => {
               for me. I don't really understand how they work or why we would use them. I tried watching videos
               and reading documentation to understand what they are, but I am still having trouble understanding
               them. However, it seems like it is an easy way for passing data throughout the entire app. I had
-              trouble working with Riverpod and storing our classes into our storage Hive. It was still a great
+              trouble working with Riverpod and storing classes into our storage Hive. It was still a great
               experience though. I learned how to jsonify and automate the creation of classes to help store
               them into databases.
             </p>

@@ -22,9 +22,7 @@ const PCGPage = () => {
 
   return (
     <>
-      <article className='w-full min-w-0 max-w-6xl mt-4 px-1 md:px-6 
-      min-h-[calc(100vh-103px)] block' 
-      >
+      <article className='project_article'>
         <div className='max-w-none'>
           <h1 className='break-words text-4xl font-semibold mb-8'>
             Procedural Content Generation: Mazes
@@ -95,7 +93,7 @@ const PCGPage = () => {
               We will have a grid for the entire map. Each square will be called a cell.
             </p>
             <p className="my-5">
-              Prim's algorithm has a few data structures that will hold information for us.
+              Prim's algorithm requires a few data structures that will hold information for us.
               We will have a visited that will keep track of what cell has already joined the maze.
               Then there will also be a frontier, which will collect all available walls from the cell 
               that has just been visited.
@@ -166,7 +164,7 @@ const PCGPage = () => {
               />
             </figure>
             <p className="my-5">
-              Two different size 10 pixels mazes. One has the NavMesh on the other doesn't.
+              Two different size 10 pixel mazes. One has the NavMesh on the other doesn't.
             </p>
             <figure className='mb-5 flex flex-col items-center content-center'>
               <Image

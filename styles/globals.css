@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero_main{
+  @apply py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:gap-8 xl:gap-0 lg:grid-cols-12;
+}
+
+.footer{
+  @apply max-w-full mx-auto flex justify-between items-center flex-wrap py-[36px] 
+  md:py-[40px] md:px-[60px] px-4 min-h-[100px];
+}
+
+.project_article{
+  @apply w-full min-w-0 max-w-6xl mt-4 px-1 md:px-6 
+  min-h-[calc(100vh-103px)] block;
+}
