@@ -64,7 +64,7 @@ const Projects = () => {
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
                     href='/Projects/Portfolio'
-                    className="text-violet-700"
+                    className="text-violet-700 dark:text-violet-400"
                   >
                     Portfolio
                   </Link>
@@ -80,7 +80,7 @@ const Projects = () => {
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
                     href='/Projects/TrainingTracker'
-                    className="text-violet-700"
+                    className="text-violet-700 dark:text-violet-400"
                   >
                     Training Tracker
                   </Link>
@@ -94,7 +94,7 @@ const Projects = () => {
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
                     href='/Projects/RayTracing'
-                    className="text-violet-700"
+                    className="text-violet-700 dark:text-violet-400"
                   >
                     Raytracer
                   </Link>
@@ -109,7 +109,7 @@ const Projects = () => {
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
                     href='/Projects/GameAI'
-                    className="text-violet-700"
+                    className="text-violet-700 dark:text-violet-400"
                   >
                     Game AI Series
                   </Link>
@@ -123,7 +123,7 @@ const Projects = () => {
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
                     href='/Projects/DataMining'
-                    className="text-violet-700"
+                    className="text-violet-700 dark:text-violet-400"
                   >
                     Data Mining Series
                   </Link>
@@ -137,7 +137,7 @@ const Projects = () => {
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
                     href='/Projects/SpotColWebApp'
-                    className="text-violet-700"
+                    className="text-violet-700 dark:text-violet-400"
                   >
                     Spotify Collab Web App
                   </Link>
@@ -151,7 +151,7 @@ const Projects = () => {
                 <td className="pl-[0px] py-2 pr-2">
                   <Link
                     href='/Projects/SousChef'
-                    className="text-violet-700"
+                    className="text-violet-700 dark:text-violet-400"
                   >
                     Sous Chef
                   </Link>

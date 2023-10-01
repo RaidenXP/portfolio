@@ -24,9 +24,9 @@ const ProjectList = ({ setMenu, menuState }) => {
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects'
-            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm font-medium
-            ${ pathname === '/Projects' ? 'text-violet-700 hover:text-black' : 'hover:text-violet-700'}`}
+            className={`proj_main_item
+            ${ pathname === '/Projects' ? 'proj_item_active' : 
+            'proj_item_not_active'}`}
             onClick={() => {
               if(setMenu)
                 setMenu(false)
@@ -40,10 +40,9 @@ const ProjectList = ({ setMenu, menuState }) => {
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects/Portfolio'
-            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm font-medium
-            ${ pathname === '/Projects/Portfolio' ? 'text-violet-700 hover:text-black' : 
-            'hover:text-violet-700'}`}
+            className={`proj_main_item
+            ${ pathname === '/Projects/Portfolio' ? 'proj_item_active' : 
+            'proj_item_not_active'}`}
             onClick={() => {
               if(setMenu)
                 setMenu(false)
@@ -62,10 +61,9 @@ const ProjectList = ({ setMenu, menuState }) => {
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects/TrainingTracker'
-            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm font-medium
-            ${ pathname === '/Projects/TrainingTracker' ? 'text-violet-700 hover:text-black' : 
-            'hover:text-violet-700'}`}
+            className={`proj_main_item
+            ${ pathname === '/Projects/TrainingTracker' ? 'proj_item_active' : 
+            'proj_item_not_active'}`}
             onClick={() => {
               if(setMenu)
                 setMenu(false)
@@ -84,10 +82,9 @@ const ProjectList = ({ setMenu, menuState }) => {
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects/RayTracing'
-            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm font-medium
-            ${ pathname === '/Projects/RayTracing' ? 'text-violet-700 hover:text-black' : 
-            'hover:text-violet-700'}`}
+            className={`proj_main_item
+            ${ pathname === '/Projects/RayTracing' ? 'proj_item_active' : 
+            'proj_item_not_active'}`}
             onClick={() => {
               if(setMenu)
                 setMenu(false)
@@ -106,10 +103,9 @@ const ProjectList = ({ setMenu, menuState }) => {
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects/GameAI'
-            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm font-medium
-            ${ pathname === '/Projects/GameAI' ? 'text-violet-700 hover:text-black' : 
-            'hover:text-violet-700'}`}
+            className={`proj_main_item
+            ${ pathname === '/Projects/GameAI' ? 'proj_item_active' : 
+            'proj_item_not_active'}`}
             onClick={() => {
               if(setMenu)
                 setMenu(false)
@@ -122,12 +118,10 @@ const ProjectList = ({ setMenu, menuState }) => {
               <ul className="mb-0 px-2 ">
                 <li className="my-1.5">
                   <Link href='/Projects/GameAI/Path' 
-                  className={`flex w-full relative cursor-pointer 
-                  items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900
+                  className={`proj_sub_item
                   ${ pathname === '/Projects/GameAI/Path' ? 
-                  'text-violet-700 hover:text-black' : 
-                  'hover:text-violet-700'}`}
+                  'proj_item_active' : 
+                  'proj_item_not_active'}`}
                   onClick={() => {
                     if(setMenu)
                       setMenu(false)
@@ -138,12 +132,10 @@ const ProjectList = ({ setMenu, menuState }) => {
                 </li>
                 <li className="my-1.5">
                   <Link href='/Projects/GameAI/Hanabi' 
-                  className={`flex w-full relative cursor-pointer 
-                  items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900
+                  className={`proj_sub_item
                   ${ pathname === '/Projects/GameAI/Hanabi' ? 
-                  'text-violet-700 hover:text-black' : 
-                  'hover:text-violet-700'}`}
+                  'proj_item_active' : 
+                  'proj_item_not_active'}`}
                   onClick={() => {
                     if(setMenu)
                       setMenu(false)
@@ -154,12 +146,10 @@ const ProjectList = ({ setMenu, menuState }) => {
                 </li>
                 <li className="my-1.5">
                   <Link href='/Projects/GameAI/PCG' 
-                  className={`flex w-full relative cursor-pointer 
-                  items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900
+                  className={`proj_sub_item
                   ${ pathname === '/Projects/GameAI/PCG' ? 
-                  'text-violet-700 hover:text-black' : 
-                  'hover:text-violet-700'}`}
+                  'proj_item_active' : 
+                  'proj_item_not_active'}`}
                   onClick={() => {
                     if(setMenu)
                       setMenu(false)
@@ -177,10 +167,9 @@ const ProjectList = ({ setMenu, menuState }) => {
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects/DataMining'
-            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm font-medium
-            ${ pathname === '/Projects/DataMining' ? 'text-violet-700 hover:text-black' : 
-            'hover:text-violet-700'}`}
+            className={`proj_main_item
+            ${ pathname === '/Projects/DataMining' ? 'proj_item_active' : 
+            'proj_item_not_active'}`}
             onClick={() => {
               if(setMenu)
                 setMenu(false)
@@ -193,12 +182,10 @@ const ProjectList = ({ setMenu, menuState }) => {
               <ul className="mb-0 px-2 ">
                 <li className="my-1.5">
                   <Link href='/Projects/DataMining/DataExtraction' 
-                  className={`flex w-full relative cursor-pointer 
-                  items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900
+                  className={`proj_sub_item
                   ${ pathname === '/Projects/DataMining/DataExtraction' ? 
-                  'text-violet-700 hover:text-black' : 
-                  'hover:text-violet-700'}`}
+                  'proj_item_active' : 
+                  'proj_item_not_active'}`}
                   onClick={() => {
                     if(setMenu)
                       setMenu(false)
@@ -209,12 +196,10 @@ const ProjectList = ({ setMenu, menuState }) => {
                 </li>
                 <li className="my-1.5">
                   <Link href='/Projects/DataMining/DataVisualization' 
-                  className={`flex w-full relative cursor-pointer 
-                  items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900
+                  className={`proj_sub_item
                   ${ pathname === '/Projects/DataMining/DataVisualization' ? 
-                  'text-violet-700 hover:text-black' : 
-                  'hover:text-violet-700'}`}
+                  'proj_item_active' : 
+                  'proj_item_not_active'}`}
                   onClick={() => {
                     if(setMenu)
                       setMenu(false)
@@ -225,12 +210,10 @@ const ProjectList = ({ setMenu, menuState }) => {
                 </li>
                 <li className="my-1.5">
                   <Link href='/Projects/DataMining/Clustering' 
-                  className={`flex w-full relative cursor-pointer 
-                  items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900
+                  className={`proj_sub_item
                   ${ pathname === '/Projects/DataMining/Clustering' ? 
-                  'text-violet-700 hover:text-black' : 
-                  'hover:text-violet-700'}`}
+                  'proj_item_active' : 
+                  'proj_item_not_active'}`}
                   onClick={() => {
                     if(setMenu)
                       setMenu(false)
@@ -241,12 +224,10 @@ const ProjectList = ({ setMenu, menuState }) => {
                 </li>
                 <li className="my-1.5">
                   <Link href='/Projects/DataMining/Other' 
-                  className={`flex w-full relative cursor-pointer 
-                  items-center justify-between rounded-md pl-2 py-1 text-left
-                  text-sm hover:text-black text-gray-900
+                  className={`proj_sub_item
                   ${ pathname === '/Projects/DataMining/Other' ? 
-                  'text-violet-700 hover:text-black' : 
-                  'hover:text-violet-700'}`}
+                  'proj_item_active' : 
+                  'proj_item_not_active'}`}
                   onClick={() => {
                     if(setMenu)
                       setMenu(false)
@@ -264,10 +245,9 @@ const ProjectList = ({ setMenu, menuState }) => {
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects/SpotColWebApp'
-            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm font-medium
-            ${ pathname === '/Projects/SpotColWebApp' ? 'text-violet-700 hover:text-black' : 
-            'hover:text-violet-700'}`}
+            className={`proj_main_item
+            ${ pathname === '/Projects/SpotColWebApp' ? 'proj_item_active' : 
+            'proj_item_not_active'}`}
             onClick={() => {
               if(setMenu)
                 setMenu(false)
@@ -286,10 +266,9 @@ const ProjectList = ({ setMenu, menuState }) => {
         <li className="my-1.5 ml-[3px]">
           <Link
             href='/Projects/SousChef'
-            className={`flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
-            py-1 text-left text-sm font-medium
-            ${ pathname === '/Projects/SousChef' ? 'text-violet-700 hover:text-black' : 
-            'hover:text-violet-700'}`}
+            className={`proj_main_item
+            ${ pathname === '/Projects/SousChef' ? 'proj_item_active' : 
+            'proj_item_not_active'}`}
             onClick={() => {
               if(setMenu)
                 setMenu(false)

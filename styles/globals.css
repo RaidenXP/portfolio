@@ -15,3 +15,42 @@
   @apply w-full min-w-0 max-w-6xl mt-4 px-1 md:px-6 
   min-h-[calc(100vh-103px)] block;
 }
+
+.main_bg{
+  @apply bg-no-repeat bg-fixed bg-gradient-to-br from-slate-50 to-violet-100
+  dark:bg-slate-800 dark:bg-none
+}
+
+.nav_list{
+  @apply font-medium flex flex-col p-4 md:p-0 mt-4 border 
+  border-violet-100 rounded-lg bg-violet-100 md:flex-row 
+  md:space-x-8 md:mt-0 md:border-0 shadow-xl md:bg-transparent md:shadow-none
+}
+
+.nav_list_active_item{
+ @apply text-white bg-violet-700 md:bg-transparent md:text-violet-700 dark:md:text-violet-400
+}
+
+.nav_list_item{
+  @apply text-gray-900 hover:bg-violet-300 hover:text-white 
+  md:hover:bg-transparent md:border-0 md:hover:text-violet-700 dark:text-white dark:md:hover:text-violet-400
+}
+
+.proj_main_item{
+  @apply flex w-full relative cursor-pointer items-center justify-between rounded-md pl-2
+  py-1 text-left text-sm font-medium
+}
+
+.proj_sub_item{
+  @apply flex w-full relative cursor-pointer 
+  items-center justify-between rounded-md pl-2 py-1 text-left
+  text-sm text-gray-900 dark:text-gray-400
+}
+
+.proj_item_active{
+ @apply text-violet-700 hover:text-black dark:hover:text-white dark:text-violet-400
+}
+
+.proj_item_not_active{
+  @apply hover:text-violet-700 dark:hover:text-violet-400
+}

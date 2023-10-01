@@ -21,12 +21,12 @@ const Hero = () => {
         >
           <h1 
             className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 
-            md:text-5xl xl:text-6xl"
+            md:text-5xl xl:text-6xl dark:text-white"
           >
             Hi, I'm <span className="text-violet-600">Nathan Tran</span>
           </h1>
           <p 
-            className="max-w-2xl mb-6 font-[335] text-black lg:mb-8 md:text-lg lg:text-xl"
+            className="max-w-2xl mb-6 font-[335] text-black lg:mb-8 md:text-lg lg:text-xl dark:text-white"
           >
             Software Engineer with a Bachelor's Degree in
             <span> </span>
@@ -54,7 +54,8 @@ const Hero = () => {
         className="grid md:grid-cols-2 gap-8 py-8 px-4 mx-auto max-w-screen-xl lg:py-16"
       >
         <div 
-          className="bg-violet-50 border border-violet-200 rounded-lg p-8 md:p-12 shadow-lg"
+          className="bg-violet-50 border border-violet-200 rounded-lg p-8 md:p-12 shadow-2xl 
+          dark:bg-slate-800 dark:border-slate-900"
         >
           <div 
             className="bg-purple-100 text-purple-800 font-scp text-xs font-medium inline-flex items-center px-2.5 
@@ -78,7 +79,7 @@ const Hero = () => {
               Projects
           </div>
           <h2 
-            className="text-gray-900 text-3xl font-extrabold mb-2"
+            className="text-gray-900 text-3xl font-extrabold mb-2 dark:text-inherit"
           >
             A list of Projects
           </h2>
@@ -91,7 +92,8 @@ const Hero = () => {
           </p>
           <Link 
             href="/Projects" 
-            className="text-violet-600 hover:underline font-medium text-lg inline-flex items-center"
+            className="text-violet-600 hover:underline font-medium text-lg inline-flex items-center
+            dark:text-violet-300"
           >
             Read more
               <svg 
@@ -112,7 +114,8 @@ const Hero = () => {
         </div>
 
 
-        <div className="bg-violet-50 border border-violet-200 rounded-lg p-8 md:p-12 shadow-lg">
+        <div className="bg-violet-50 border border-violet-200 rounded-lg p-8 md:p-12 shadow-2xl
+        dark:bg-slate-800 dark:border-slate-900">
           <div className="bg-indigo-100 text-indigo-800 text-xs 
             font-medium inline-flex items-center px-2.5 py-0.5 rounded-md mb-2 font-scp"
           >
@@ -125,7 +128,7 @@ const Hero = () => {
               />
               About
           </div>
-          <h2 className="text-gray-900 text-3xl font-extrabold mb-2">
+          <h2 className="text-gray-900 text-3xl font-extrabold mb-2 dark:text-inherit">
             Recent Graduate actively looking for jobs
           </h2>
           <p className="font-scp text-small font-normal text-gray-500 mb-4">
@@ -134,7 +137,8 @@ const Hero = () => {
             in Software Engineering and App Development.
           </p>
           <Link href="/About" 
-            className="text-indigo-600 hover:underline font-medium text-lg inline-flex items-center"
+            className="text-indigo-600 hover:underline font-medium text-lg inline-flex items-center
+            dark:text-indigo-300"
           >
             Read more
               <svg 

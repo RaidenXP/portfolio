@@ -1,39 +1,13 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import FooterLinks from './FooterLinks';
 
 const Footer = () => {
   return (
-    <footer className='w-full mx-auto border-t border-solid border-violet-200'>
+    <footer className='w-full mx-auto border-t border-solid border-violet-200 dark:border-slate-900'>
       <div 
         className="footer"
       >
         <p className='black text-xl font-bold'>Nathan Tran's Other Links</p>
-        <div className='flex-1 flex justify-end gap-10'>
-          <Link href='https://www.linkedin.com/in/nathan-tran-a6455b164/' target='_blank' rel='noopener noreferrer'>
-            <Image 
-              src={'/linkedin-mark/linkedin.svg'}
-              alt='linkedin'
-              width={30}
-              height={30}
-            />
-          </Link>
-          <Link href='https://github.com/RaidenXP' target='_blank' rel='noopener noreferrer'>
-            <Image 
-                src={'/github-mark/github-mark.svg'}
-                alt='github'
-                width={30}
-                height={30}
-            />
-          </Link>
-          <Link href='https://twitter.com/Raiden_NT' target='_blank' rel='noopener noreferrer'>
-            <Image 
-                src={'/twitter-mark/twitter.svg'}
-                alt='twitter'
-                width={25}
-                height={25}
-            />
-          </Link>
-        </div>
+        <FooterLinks/>
       </div>
     </footer>
   )

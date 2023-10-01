@@ -37,9 +37,7 @@ const NavList = ({ setHam, hamState }) => {
 
   return (
     <motion.ul 
-      className='font-medium flex flex-col p-4 md:p-0 mt-4 border 
-      border-violet-100 rounded-lg bg-violet-100 md:flex-row 
-      md:space-x-8 md:mt-0 md:border-0 shadow-xl md:bg-transparent md:shadow-none'
+      className='nav_list'
       variants={ulVariants}
     >
       <motion.li variants={liVariants}>
@@ -47,9 +45,8 @@ const NavList = ({ setHam, hamState }) => {
           href='/'
           className={`block py-2 pl-3 pr-4 rounded md:p-0
             ${ pathname === '/' ? 
-            'text-white bg-violet-700 md:bg-transparent md:text-violet-700' 
-            : 'text-gray-900 hover:bg-violet-300 hover:text-white md:hover:bg-transparent md:border-0' 
-            + ' md:hover:text-violet-700'}`}
+            'nav_list_active_item' 
+            : 'nav_list_item'}`}
           onClick={() => {
             if(setHam)
               setHam(false)
@@ -63,9 +60,8 @@ const NavList = ({ setHam, hamState }) => {
           href='/Projects'
           className={`block py-2 pl-3 pr-4 rounded md:p-0
             ${ pathname.includes('/Projects') ? 
-            'text-white bg-violet-700 md:bg-transparent md:text-violet-700' 
-            : 'text-gray-900 hover:bg-violet-300 hover:text-white md:hover:bg-transparent md:border-0' 
-            + ' md:hover:text-violet-700'}`}
+            'nav_list_active_item' 
+            : 'nav_list_item'}`}
           onClick={() => {
             if(setHam)
               setHam(false)
@@ -79,9 +75,8 @@ const NavList = ({ setHam, hamState }) => {
           href='/About'
           className={`block py-2 pl-3 pr-4 rounded md:p-0
             ${ pathname === '/About' ? 
-            'text-white bg-violet-700 md:bg-transparent md:text-violet-700' 
-            : 'text-gray-900 hover:bg-violet-300 hover:text-white md:hover:bg-transparent md:border-0' 
-            + ' md:hover:text-violet-700'}`}
+            'nav_list_active_item' 
+            : 'nav_list_item'}`}
           onClick={() => {
             if(setHam)
               setHam(false)
