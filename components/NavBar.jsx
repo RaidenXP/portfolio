@@ -1,9 +1,5 @@
-import Link from 'next/link';
-import Image from 'next/image';
-
 import NavList from './NavList';
 import MobileNavDrop from './MobileNavDrop';
-import ThemeToggle from './ThemeToggle';
 import Logo from './Logo';
 
 const NavBar = () => {
@@ -17,10 +13,9 @@ const NavBar = () => {
         <Logo/>
         <MobileNavDrop/>
         <div 
-          className={`md:flex items-center justify-between w-full md:w-auto hidden`}
+          className={`md:flex hidden`}
         >
           <NavList/>
-          <ThemeToggle styles='p-8'/>
         </div>
       </div>
     </nav>

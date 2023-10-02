@@ -11,8 +11,7 @@ const MobileSideBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <motion.div className={`md:hidden sticky top-[102px] z-40 py-3 bg-gradient-to-br from-inherit 
-      backdrop-blur-[4px] border-y`}
+    <motion.div className={`mobile_side_bar_header`}
       initial={false}
       animate={toggleMenu ? "open" : "closed"}
     >
@@ -27,8 +26,7 @@ const MobileSideBar = () => {
           <span>Menu</span>
       </button>
       <motion.div 
-        className={`absolute px-4 flex flex-col justify-between w-full bg-gradient-to-br 
-        from-slate-50 to-violet-100`}
+        className={`mobile_side_bar_content`}
         variants={{
           open: {
             clipPath: "inset(0% 0% 0% 0% round 10px)",

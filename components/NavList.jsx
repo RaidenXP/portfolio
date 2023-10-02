@@ -6,6 +6,8 @@ import { usePathname } from 'next/navigation';
 
 import { motion } from 'framer-motion';
 
+import ThemeToggle from './ThemeToggle';
+
 const ulVariants = {
   open: {
     transition: { staggerChildren: 0.1, delayChildren: 0.25 }
@@ -84,6 +86,9 @@ const NavList = ({ setHam, hamState }) => {
         >
           About
         </Link>
+      </motion.li>
+      <motion.li className='pt-4 md:pt-0 self-center' variants={liVariants}>
+        <ThemeToggle/>
       </motion.li>
     </motion.ul>
   )

@@ -22,9 +22,10 @@
 }
 
 .nav_list{
-  @apply font-medium flex flex-col p-4 md:p-0 mt-4 border 
+  @apply font-medium flex flex-col p-4 md:p-0 mt-4 border md:items-center
   border-violet-100 rounded-lg bg-violet-100 md:flex-row 
   md:space-x-8 md:mt-0 md:border-0 shadow-xl md:bg-transparent md:shadow-none
+  dark:bg-slate-700 dark:border-slate-700 dark:md:bg-transparent
 }
 
 .nav_list_active_item{
@@ -34,6 +35,7 @@
 .nav_list_item{
   @apply text-gray-900 hover:bg-violet-300 hover:text-white 
   md:hover:bg-transparent md:border-0 md:hover:text-violet-700 dark:text-white dark:md:hover:text-violet-400
+  dark:hover:bg-violet-500 dark:md:hover:bg-transparent
 }
 
 .proj_main_item{
@@ -53,4 +55,31 @@
 
 .proj_item_not_active{
   @apply hover:text-violet-700 dark:hover:text-violet-400
+}
+
+.toggle{
+  @apply w-[85px] dark:bg-violet-400/40 bg-violet-700/40
+  flex justify-between rounded-[50px] cursor-pointer 
+  items-center p-[5px]
+}
+
+.handle{
+  @apply w-[35px] h-[35px] dark:bg-white bg-black
+  rounded-full
+}
+
+.hamburger{
+  @apply inline-flex items-center p-2 w-10 h-10 justify-center text-sm
+  rounded-lg hover:bg-violet-100 focus:outline-none focus:ring-2 focus:ring-gray-200
+  dark:hover:bg-violet-700 dark:focus:ring-slate-700 dark:focus:ring-2 dark:focus:outline-none
+}
+
+.mobile_side_bar_header{
+  @apply md:hidden sticky top-[102px] z-40 py-3 bg-gradient-to-br from-inherit 
+  backdrop-blur-[4px] border-y dark:bg-none
+}
+
+.mobile_side_bar_content{
+  @apply absolute px-4 flex flex-col justify-between w-full bg-gradient-to-br 
+  from-slate-50 to-violet-100 dark:bg-none dark:bg-slate-800
 }

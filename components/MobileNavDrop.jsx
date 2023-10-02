@@ -10,7 +10,6 @@ const Path = props => (
   <motion.path
     fill="transparent"
     strokeWidth="3"
-    stroke="hsl(0, 0%, 18%)"
     strokeLinecap="round"
     {...props}
   />
@@ -50,11 +49,10 @@ const MobileNavDrop = () => {
     >
       <button
         type='button' 
-        className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 
-        rounded-lg hover:bg-violet-100 focus:outline-none focus:ring-2 focus:ring-gray-200'
+        className='hamburger'
         onClick={() => setToggleHam((prev) => !prev)}
       >
-        <svg width="23" height="23" viewBox="0 0 23 23">
+        <svg className='stroke-[hsl(0,0%,18%)] dark:stroke-white' width="23" height="23" viewBox="0 0 23 23">
           <Path
             variants={{
               closed: { d: "M 2 2.5 L 20 2.5" },
