@@ -31,11 +31,11 @@ const ThemeToggle = () => {
 
   return (
     <>
-      <div className={'toggle'} onClick={toggleSwitch}>
+      <motion.div layout layoutRoot className={'toggle'} onClick={toggleSwitch}>
         <GoSun className="hidden dark:block ml-[10px]"/>
-        <motion.div className="handle" layout transition={spring} />
+        <motion.div className="handle" layout transition={spring}/>
         <GoMoon className="dark:hidden mr-[10px]"/>
-      </div>
+      </motion.div>
     </>
   )
 }
