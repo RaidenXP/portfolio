@@ -7,9 +7,9 @@ const Hero = () => {
       <div 
         className="hero_main"
       >
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <div className="lg:order-first lg:mt-0 lg:col-span-6 order-last row-span-9 h-auto max-w-lg mx-auto">
             <Image
-              src={'/me/me2.jpg'}
+              src={'/me/me3.png'}
               alt="my image"
               width={750}
               height={750}
@@ -17,7 +17,7 @@ const Hero = () => {
             />
         </div>
         <div 
-          className="mx-auto place-self-center lg:col-span-7 row-span-3"
+          className="mx-auto place-self-center lg:col-span-6 row-span-3"
         >
           <h1 
             className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 
@@ -28,7 +28,7 @@ const Hero = () => {
           <p 
             className="max-w-2xl mb-6 font-[335] text-black lg:mb-8 md:text-lg lg:text-xl dark:text-white"
           >
-            Software Engineer with a Bachelor's Degree in
+            Graduate with a Bachelor's Degree in
             <span> </span>
             <span 
               className="font-bold bg-gradient-to-br from-blue-200 to-violet-900 
@@ -38,17 +38,7 @@ const Hero = () => {
             </span>
           </p>
         </div>
-        <div className="lg:hidden row-span-9 h-auto max-w-lg mx-auto">
-            <Image
-              src={'/me/me2.jpg'}
-              alt="my image"
-              width={750}
-              height={750}
-              className="rounded-[88px] shadow-[0px_25px_9px_-5px_rgba(0,0,0,0.24)]"
-            />
-        </div>
       </div>
-      
       
       <div 
         className="grid md:grid-cols-2 gap-8 py-8 px-4 mx-auto max-w-screen-xl lg:py-16"
